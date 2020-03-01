@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<railML
+xmlns="https://www.railml.org/schemas/3.1"
+xmlns:gml="http://www.opengis.net/gml/3.2/"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+version="3.1">
+<infrastructure
+id = "is_01">
+<Debug>ReadOK</Debug>
+  <topology>
+    <netElements>
+      <netElement id = "ne_a01" length="500.0" startX="25" startY="50" endX="100" endY="50">
+        <relation ref = "nr_a01a02"/>
+        <relation ref = "nr_a01a03"/>
+      </netElement>
+      <netElement id = "ne_a02" length="500.0" startX="25" startY="100" endX="75" endY="100">
+        <relation ref = "nr_a01a02"/>
+        <relation ref = "nr_a02a03"/>
+      </netElement>
+      <netElement id = "ne_a03" length="200.0" startX="100" startY="50" endX="150" endY="50">
+        <relation ref = "nr_a01a03"/>
+        <relation ref = "nr_a02a03"/>
+        <relation ref = "nr_a03x01"/>
+      </netElement>
+      <netElement id = "ne_b01" length="500.0" startX="250" startY="50" endX="325" endY="50">
+        <relation ref = "nr_b01b03"/>
+        <relation ref = "nr_b01b04"/>
+      </netElement>
+      <netElement id = "ne_b02" length="450.0" startX="275" startY="100" endX="325" endY="100">
+        <relation ref = "nr_b02b04"/>
+        <relation ref = "nr_b02b05"/>
+      </netElement>
+      <netElement id = "ne_b03" length="200.0" startX="200" startY="50" endX="250" endY="50">
+        <relation ref = "nr_b01b03"/>
+        <relation ref = "nr_b03b04"/>
+        <relation ref = "nr_x01b03"/>
+      </netElement>
+      <netElement id = "ne_b04" length="50.0" startX="250" startY="50" endX="275" endY="100">
+        <relation ref = "nr_b01b04"/>
+        <relation ref = "nr_b02b04"/>
+        <relation ref = "nr_b03b04"/>
+        <relation ref = "nr_b04b05"/>
+      </netElement>
+      <netElement id = "ne_b05" length="200.0" startX="200" startY="100" endX="275" endY="100">
+        <relation ref = "nr_b02b05"/>
+        <relation ref = "nr_b04b05"/>
+      </netElement>
+      <netElement id = "ne_x01" length="3600.0" startX="150" startY="50" endX="200" endY="50">
+        <relation ref = "nr_a03x01"/>
+        <relation ref = "nr_x01b03"/>
+      </netElement>
+    </netElements>
+    <netRelations>
+      <netRelation id = "nr_a01a02" positionOnA = "1" positionOnB = "1" navigability = "None">
+        <elementA ref = "ne_a01"/>
+        <elementB ref = "ne_a02"/>
+      </netRelation>
+      <netRelation id = "nr_a01a03" positionOnA = "1" positionOnB = "0" navigability = "Both">
+        <elementA ref = "ne_a01"/>
+        <elementB ref = "ne_a03"/>
+      </netRelation>
+      <netRelation id = "nr_a02a03" positionOnA = "1" positionOnB = "0" navigability = "Both">
+        <elementA ref = "ne_a02"/>
+        <elementB ref = "ne_a03"/>
+      </netRelation>
+      <netRelation id = "nr_b01b03" positionOnA = "0" positionOnB = "1" navigability = "Both">
+        <elementA ref = "ne_b01"/>
+        <elementB ref = "ne_b03"/>
+      </netRelation>
+      <netRelation id = "nr_b01b04" positionOnA = "0" positionOnB = "0" navigability = "None">
+        <elementA ref = "ne_b01"/>
+        <elementB ref = "ne_b04"/>
+      </netRelation>
+      <netRelation id = "nr_b02b04" positionOnA = "0" positionOnB = "1" navigability = "Both">
+        <elementA ref = "ne_b02"/>
+        <elementB ref = "ne_b04"/>
+      </netRelation>
+      <netRelation id = "nr_b02b05" positionOnA = "0" positionOnB = "1" navigability = "Both">
+        <elementA ref = "ne_b02"/>
+        <elementB ref = "ne_b05"/>
+      </netRelation>
+      <netRelation id = "nr_b03b04" positionOnA = "1" positionOnB = "0" navigability = "Both">
+        <elementA ref = "ne_b03"/>
+        <elementB ref = "ne_b04"/>
+      </netRelation>
+      <netRelation id = "nr_b04b05" positionOnA = "1" positionOnB = "1" navigability = "None">
+        <elementA ref = "ne_b04"/>
+        <elementB ref = "ne_b05"/>
+      </netRelation>
+      <netRelation id = "nr_a03x01" positionOnA = "1" positionOnB = "0" navigability = "Both">
+        <elementA ref = "ne_a03"/>
+        <elementB ref = "ne_x01"/>
+      </netRelation>
+      <netRelation id = "nr_x01b03" positionOnA = "1" positionOnB = "0" navigability = "Both">
+        <elementA ref = "ne_x01"/>
+        <elementB ref = "ne_b03"/>
+      </netRelation>
+    </netRelations>
+    <networks>
+      <network id = "nw01">
+        <level id = "lv0" descriptionLevel = "Micro">
+          <networkResource ref = "ne_a01"/>
+          <networkResource ref = "ne_a02"/>
+          <networkResource ref = "ne_a03"/>
+          <networkResource ref = "ne_b01"/>
+          <networkResource ref = "ne_b02"/>
+          <networkResource ref = "ne_b03"/>
+          <networkResource ref = "ne_b04"/>
+          <networkResource ref = "ne_b05"/>
+          <networkResource ref = "ne_x01"/>
+          <networkResource ref = "nr_a01a02"/>
+          <networkResource ref = "nr_a01a03"/>
+          <networkResource ref = "nr_a02a03"/>
+          <networkResource ref = "nr_b01b03"/>
+          <networkResource ref = "nr_b01b04"/>
+          <networkResource ref = "nr_b02b04"/>
+          <networkResource ref = "nr_b02b05"/>
+          <networkResource ref = "nr_b03b04"/>
+          <networkResource ref = "nr_b04b05"/>
+          <networkResource ref = "nr_a03x01"/>
+          <networkResource ref = "nr_x01b03"/>
+        </level>
+      </network>
+    </networks>
+  </topology>
+<functionalInfrastructure>
+<operationalPoints>
+<operationalPoint id="opp01">
+<name name="Bf Arnau" language="de"/>
+<name name="Adamov" language="cz"/>
+<spotLocation id="opp01_sloc01" netElementRef="ne_a11"
+applicationDirection="both">
+<linearCoordinate positioningSystemRef="lps01" measure="300.0"/>
+</spotLocation>
+<designator register="RL100" entry="OAR"/>
+<opEquipment>
+<ownsPlatform ref="plf01"/>
+</opEquipment>
+<opOperations>
+<opOperation operationalType="station" trafficType="passenger"/>
+</opOperations>
+</operationalPoint>
+<operationalPoint id="opp02">
+<name name="Bf Cstadt" language="de"/>
+<name name="Bouzov" language="cz"/>
+<spotLocation id="opp02_sloc01" netElementRef="ne_b11"
+applicationDirection="both">
+<linearCoordinate positioningSystemRef="lps01" measure="4700.0"/>
+</spotLocation>
+<designator register="RL100" entry="OCS"/>
+<opEquipment>
+<ownsPlatform ref="plf02"/>
+<ownsPlatform ref="plf03"/>
+</opEquipment>
+<opOperations>
+<opOperation operationalType="station" trafficType="passenger"/>
+</opOperations>
+</operationalPoint>
+</operationalPoints>
+<platforms>
+<platform id="plf01">
+<spotLocation id="plf01_sloc01" netElementRef="ne_a11"
+applicationDirection="both">
+<linearCoordinate measure="300.0" positioningSystemRef="lps01"/>
+</spotLocation>
+<ownsPlatformEdge ref="ple01"/>
+<ownsPlatformEdge ref="ple02"/>
+</platform>
+<platform id="plf02">
+<spotLocation id="plf02_sloc01" netElementRef="ne_b11"
+applicationDirection="both">
+<linearCoordinate measure="4700.0" positioningSystemRef="lps01"/>
+</spotLocation>
+<ownsPlatformEdge ref="ple03"/>
+</platform>
+<platform id="plf03">
+<spotLocation id="plf03_sloc01" netElementRef="ne_b11"
+applicationDirection="both">
+<linearCoordinate measure="4700.0" positioningSystemRef="lps01"/>
+</spotLocation>
+<ownsPlatformEdge ref="ple04"/>
+</platform>
+<platform id="ple01" height="550">
+<name name="Gleis 3" language="de"/>
+<linearLocation id="ple01_lloc01" applicationDirection="both">
+<associatedNetElement netElementRef="ne_a01" keepsOrientation="true"
+posBegin="200.0" posEnd="400.0">
+<linearCoordinateBegin measure="200.0" positioningSystemRef="lps01"
+lateralDistance="1.7" lateralSide="right"/>
+<linearCoordinateEnd measure="400.0" positioningSystemRef="lps01"
+lateralDistance="1.7" lateralSide="right"/>
+</associatedNetElement>
+</linearLocation>
+<length type="physical" value="200.00" validForDirection="both"/>
+</platform>
+<platform id="ple02" height="550">
+<name name="Gleis 2" language="de"/>
+<linearLocation id="ple02_lloc01" applicationDirection="both">
+<associatedNetElement netElementRef="ne_a02" keepsOrientation="true"
+posBegin="200.0" posEnd="400.0">
+<linearCoordinateBegin measure="200.0" positioningSystemRef="lps01"
+lateralDistance="1.7" lateralSide="left"/>
+<linearCoordinateEnd measure="400.0" positioningSystemRef="lps01"
+lateralDistance="1.7" lateralSide="left"/>
+</associatedNetElement>
+</linearLocation>
+<length type="physical" value="200.00" validForDirection="both"/>
+</platform>
+<platform id="ple03" height="550">
+<name name="Gleis 2" language="de"/>
+<linearLocation id="ple03_lloc01" applicationDirection="both">
+<associatedNetElement netElementRef="ne_b01" keepsOrientation="true"
+posBegin="150.0" posEnd="350.0">
+<linearCoordinateBegin measure="4650.0" positioningSystemRef="lps01"/>
+<linearCoordinateEnd measure="4850.0" positioningSystemRef="lps01"/>
+</associatedNetElement>
+</linearLocation>
+<length type="physical" value="200.00" validForDirection="both"/>
+</platform>
+<platform id="ple04" height="380">
+<name name="Gleis 1" language="de"/>
+<linearLocation id="ple04_lloc01" applicationDirection="both">
+<associatedNetElement netElementRef="ne_b02" keepsOrientation="true"
+posBegin="100.0" posEnd="350.0">
+<linearCoordinateBegin measure="4650.0" positioningSystemRef="lps01"/>
+<linearCoordinateEnd measure="4900.0" positioningSystemRef="lps01"/>
+</associatedNetElement>
+</linearLocation>
+<length type="physical" value="250.00" validForDirection="both"/>
+</platform>
+</platforms>
+</functionalInfrastructure>
+</infrastructure>
+</railML>
