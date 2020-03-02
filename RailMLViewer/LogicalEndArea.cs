@@ -10,7 +10,7 @@ namespace RailMLViewer
         {            
 
         }
-        internal virtual bool CanHandleConnections(int count)
+        internal override bool CanHandleConnections(int count)
         {
             if (count > 0)
             {
