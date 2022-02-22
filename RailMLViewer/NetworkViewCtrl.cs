@@ -11,15 +11,15 @@ namespace RailMLViewer
     public partial class NetworkViewCtrl : UserControl
     {
      
-        ScalableViewPort viewPortTranslator;
-        NetworkViewData managedObjects;
+        ScalableViewPort _viewPortTranslator;
+        NetworkViewData _managedObjects;
 
         public NetworkViewCtrl()
         {
             InitializeComponent();
             DoubleBuffered = true;
 
-            viewPortTranslator = new ScalableViewPort();
+            _viewPortTranslator = new ScalableViewPort();
 
         
 
@@ -29,23 +29,42 @@ namespace RailMLViewer
             this.MouseUp += new MouseEventHandler(MouseUpEvent);
             this.MouseWheel += new MouseEventHandler(MouseWheelEvent);
         }
-        Point leftMouseDown;
-        Point leftMouseUp;
+        Point _leftMouseDown;
+        Point _leftMouseUp;
+        private void WindowNewMenu_Click(object sender, EventArgs e) {
+
+        }
+
+        ContextMenuStrip _lastMenu;
+
 
         private void MouseDownEvent(object sender, MouseEventArgs e)
         {
-           if (e.Button == MouseButtons.Left)
-           {
-                leftMouseDown = e.Location;
-               
+            if (e.Button == MouseButtons.Left) {
+                _leftMouseDown = e.Location;               
             }
+            else {
+
+                 // Create a MenuStrip control with a new window.
+                var menu = new ContextMenuStrip();
+                ToolStripMenuItem windowNewMenu = new ToolStripMenuItem("Reset view", null, new EventHandler(WindowNewMenu_Click));
+                menu.Items.Add(windowNewMenu);
+
+
+                _lastMenu = menu;
+
+                var startPoint = this.PointToScreen(e.Location);
+                menu.Show(startPoint);
+
+            }
+            
         }
         private void MouseUpEvent(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
-                leftMouseUp = e.Location;
-                bool moved = viewPortTranslator.MoveOrigoScreenToScreen(leftMouseDown, leftMouseUp);
+                _leftMouseUp = e.Location;
+                bool moved = _viewPortTranslator.MoveOrigoScreenToScreen(_leftMouseDown, _leftMouseUp);
                 
                 if(moved)
                 {
@@ -57,14 +76,14 @@ namespace RailMLViewer
         {
             if (e.Delta < 0)
             {
-                viewPortTranslator.ZoomOut(e.Location);
+                _viewPortTranslator.ZoomOut(e.Location);
                 Invalidate();
             }
             else
             {
                 if (e.Delta > 0)
                 {
-                    viewPortTranslator.ZoomIn(e.Location);
+                    _viewPortTranslator.ZoomIn(e.Location);
                     Invalidate();
                 }
             }                        
@@ -73,16 +92,25 @@ namespace RailMLViewer
         {
             DrawNetworkTo(e.Graphics, Size);
         }
-        // Warning super slow...
-   
+        // Warning super slow...     
         internal void DrawNetworkTo(Graphics g, Size size)
         {
-            managedObjects.DrawNetworkTo(g, viewPortTranslator, size);            
+            _managedObjects.DrawNetworkTo(g, _viewPortTranslator, size);     
+
+            string debug = _viewPortTranslator.BuildDebugString();            
+
+            g.DrawString(debug,SystemFonts.DefaultFont,new SolidBrush(Color.Black),new Point(20,20));
+
+
         }
         internal void ChangeToViewNetwork(InfraReader netWork)
         {
-            managedObjects = new NetworkViewData();
-            managedObjects.CreateViewObjectsFor(netWork);
+            _managedObjects = new NetworkViewData();
+            _managedObjects.CreateViewObjectsFor(netWork);
+
+            PointF center = _managedObjects.CalcAverageCenter();
+
+            _viewPortTranslator.SetIntialCenter(center);
         }
     }
 }

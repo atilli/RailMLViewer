@@ -31,6 +31,30 @@ namespace RailMLViewer
             }
             return found;
         }
+        public PointF CalcAverageCenter() {
+
+            float x = 0F;
+            float y = 0F;
+            int count = 0;
+
+               
+            foreach(ViewNetworkElement element in trackElements.Values) {
+
+                Point center = element.GetLogicalCenter();
+                if(!center.IsEmpty) {
+                    x += (float) center.X;
+                    y += (float) center.Y;
+                    count++;
+                }
+            }
+            if(count>0) {
+                return new PointF(x/(float)count,y/(float)count);
+            }
+            else {
+                return new PointF();
+            }
+
+        }
         public void CreateViewObjectsFor(InfraReader netWork)
         {
             Dictionary<string, NetworkElement> sourceElements = netWork.NetworkElements;

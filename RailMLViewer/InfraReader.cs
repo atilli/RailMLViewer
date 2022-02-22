@@ -7,16 +7,17 @@ namespace RailMLViewer
     public class InfraReader
     {
         XSD.railML railMLDoc;
-        Dictionary<string, NetworkElement> networkElements;
-        Dictionary<string, NetworkNode> networkNodes;
-        Dictionary<string, PlatformEdge> platformEdges;
-        Dictionary<string, PlatformArea> platformAreas;
+        Dictionary<string, NetworkElement> _networkElements;
+        Dictionary<string, NetworkRelation> _networkRelations;
+        Dictionary<string, NetworkNode> _networkNodes;
+        Dictionary<string, PlatformEdge> _platformEdges;
+        Dictionary<string, PlatformArea> _platformAreas;
 
 
-        internal Dictionary<string, NetworkElement> NetworkElements { get => networkElements;  }
-        internal Dictionary<string, NetworkNode> NetworkNodes { get => networkNodes;  }
+        internal Dictionary<string, NetworkElement> NetworkElements { get => _networkElements;  }
+        internal Dictionary<string, NetworkNode> NetworkNodes { get => _networkNodes;  }
 
-        internal Dictionary<string, PlatformEdge> PlatformEdges { get => platformEdges; }
+        internal Dictionary<string, PlatformEdge> PlatformEdges { get => _platformEdges; }
         public bool InitFromFile(string file)
         {
 
@@ -34,21 +35,23 @@ namespace RailMLViewer
         public NetworkElement FindNetworkElement(string id)
         {
             NetworkElement ret = null;
-            networkElements.TryGetValue(id, out ret);
+            _networkElements.TryGetValue(id, out ret);
             return ret;
         }
         internal PlatformEdge FindPlatformEdge(string id)
         {
             PlatformEdge ret = null;
-            platformEdges.TryGetValue(id, out ret);
+            _platformEdges.TryGetValue(id, out ret);
             return ret;
         }
         public void BuildNetwork(Schemas.Infrastructure infraElement)
         {
-            networkElements = new Dictionary<string, NetworkElement>();
-            networkNodes = new Dictionary<string, NetworkNode>();
-            platformEdges = new Dictionary<string, PlatformEdge>();
-            platformAreas = new Dictionary<string, PlatformArea>();
+            _networkElements = new Dictionary<string, NetworkElement>();
+            _networkNodes = new Dictionary<string, NetworkNode>();
+            _platformEdges = new Dictionary<string, PlatformEdge>();
+            _platformAreas = new Dictionary<string, PlatformArea>();
+            _networkRelations = new Dictionary<string, NetworkRelation>();
+
 
             CreateNetworkElements(infraElement.Topology.NetElements);
             CreateNetworkRelations(infraElement.Topology.NetRelations);
@@ -69,7 +72,7 @@ namespace RailMLViewer
                 else
                 {
                     PlatformEdge platEdge = new PlatformEdge(railMLPlat);
-                    platformEdges[platEdge.ID] = platEdge;
+                    _platformEdges[platEdge.ID] = platEdge;
 
                     if(railMLPlat.LinearLocationSpecified)
                     {
@@ -108,7 +111,7 @@ namespace RailMLViewer
                         }
 
                     }
-                    platformAreas[platFrom.ID] = platFrom;
+                    _platformAreas[platFrom.ID] = platFrom;
                 }
                 else
                 {
@@ -123,7 +126,7 @@ namespace RailMLViewer
             {
                 NetworkElement createdElement = new NetworkElement(element);
 
-                networkElements[createdElement.ID] = createdElement;
+                _networkElements[createdElement.ID] = createdElement;
             }
         }
         public void CreateNetworkRelations(System.Collections.ObjectModel.Collection<Schemas.NetRelation> netRelations)
@@ -157,6 +160,7 @@ namespace RailMLViewer
                     {
                         elementB.ToRelations.Add(createdRelation);
                     }
+                    _networkRelations[createdRelation.ID] = createdRelation;
                 }
                 /*if (navigationSelector == Schemas.TNavigability.None)
                 {
@@ -223,7 +227,7 @@ namespace RailMLViewer
                 node.AddRelations(relations);
                 if(!oldNode)
                 {
-                    networkNodes[node.ID] = node;
+                    _networkNodes[node.ID] = node;
                 }
             }
             return node;
@@ -231,7 +235,7 @@ namespace RailMLViewer
         public void CreateNetworkNodes()
         {
 
-            foreach(NetworkElement elmentToCheck in networkElements.Values)
+            foreach(NetworkElement elmentToCheck in _networkElements.Values)
             {              
 
                 NetworkNode fromNode = CheckOrCreateNodeFor(elmentToCheck.FromRelations);
@@ -242,7 +246,7 @@ namespace RailMLViewer
                 elmentToCheck.To = toNode;
                 toNode.AddConnectedElement(elmentToCheck, false);
             }
-            foreach (NetworkNode node in networkNodes.Values)
+            foreach (NetworkNode node in _networkNodes.Values)
             {
                 node.AllElementsConnected(this);
             }

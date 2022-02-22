@@ -10,6 +10,7 @@ namespace RailMLViewer
         List<NetworkRelation> fromRelations;
         List<NetworkRelation> toRelations;
         protected Point logicalCenter = Point.Empty;
+        
 
         public string ID { get; set; }
         public NetworkElement(Schemas.NetElement railMLSource)
@@ -18,14 +19,43 @@ namespace RailMLViewer
             ID = railMLSource.Id;
             fromRelations = new List<NetworkRelation>();
             toRelations = new List<NetworkRelation>();
-            
-            LogicalStartPoint = new Point(readElement.StartX, readElement.StartY);
-            LogicalEndPoint = new Point(readElement.EndX, readElement.EndY);
 
-            logicalCenter = new Point(readElement.StartX + readElement.EndX / 2, readElement.StartY + readElement.StartY / 2);
+            if(!InifFromGeometryCoordinates(railMLSource)) {
+                
+                LogicalStartPoint = new Point(readElement.StartX, readElement.StartY);
+                LogicalEndPoint = new Point(readElement.EndX, readElement.EndY);
+            }                       
+            logicalCenter = new Point((LogicalStartPoint.X + LogicalEndPoint.X) / 2, (LogicalStartPoint.Y + LogicalEndPoint.Y) / 2);
 
             Length = System.Convert.ToDouble(readElement.Length);
 
+        }
+        bool InifFromGeometryCoordinates(Schemas.NetElement element) {
+
+            bool readSome = false;
+
+            foreach(Schemas.RTM_AssociatedPositioningSystem position in element.AssociatedPositioningSystem) {
+                
+                foreach(Schemas.RTM_IntrinsicCoordinate coord in position.IntrinsicCoordinate) {
+                    if(coord.GeometricCoordinateSpecified) {
+                        foreach(Schemas.RTM_GeometricCoordinate geo in coord.GeometricCoordinate) {
+
+                            readSome = true;
+
+                            if(LogicalStartPoint.IsEmpty) {   
+                                LogicalStartPoint = new Point((int)geo.X,(int)geo.Y);
+                            }
+                            else
+                            {
+                                if(LogicalEndPoint.IsEmpty) {   
+                                    LogicalEndPoint = new Point((int)geo.X,(int)geo.Y);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return readSome;
         }
         public Point LogicalCenter { get => logicalCenter; }
         internal Point LogicalStartPoint { get; set; }

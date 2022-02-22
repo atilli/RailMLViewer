@@ -13,6 +13,10 @@ namespace RailMLViewer
         Line2d toConnector;
         Line2d drawedLine;
 
+        Color NameColor { get; set; }
+
+        Rectangle _labelRect;
+
         public ViewNetworkElement(NetworkElement element)
         {
             sourceObject = element;
@@ -37,6 +41,12 @@ namespace RailMLViewer
                     toConnector = new Line2d(element.LogicalEndPoint, toPoint);
                 }
             }
+            NameColor = Color.Black;
+            _labelRect = Rectangle.Empty;
+            
+        }
+        public Point GetLogicalCenter() {
+            return logicalLine.CenterPoint();
         }
         internal PointF FractionPoint(double fraction)
         {
@@ -89,7 +99,7 @@ namespace RailMLViewer
 
                     }
 
-                    using (SolidBrush tx = new SolidBrush(Color.Aqua))
+                    using (SolidBrush tx = new SolidBrush(NameColor))
                     {
                         g.DrawString(NameInView, SystemFonts.SmallCaptionFont, tx, drawedLine.CenterPoint());
                     }

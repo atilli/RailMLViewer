@@ -21,17 +21,17 @@ namespace Schemas.Gml
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("LineStringType", Namespace="https://www.railml.org/schemas/3.1/gml")]
+    [System.Xml.Serialization.XmlTypeAttribute("LineStringType", Namespace="https://www.railml.org/schemas/3.2/gml")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Schemas.LineTypeCoordinate))]
     public partial class LineStringType : AbstractCurveType
     {
         
-        [System.Xml.Serialization.XmlElementAttribute("pos", Namespace="https://www.railml.org/schemas/3.1/gml")]
+        [System.Xml.Serialization.XmlElementAttribute("pos", Namespace="https://www.railml.org/schemas/3.2/gml")]
         public DirectPositionType Pos { get; set; }
         
-        [System.Xml.Serialization.XmlElementAttribute("posList", Namespace="https://www.railml.org/schemas/3.1/gml")]
+        [System.Xml.Serialization.XmlElementAttribute("posList", Namespace="https://www.railml.org/schemas/3.2/gml")]
         public DirectPositionListType PosList { get; set; }
     }
     
@@ -40,7 +40,7 @@ namespace Schemas.Gml
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("AbstractCurveType", Namespace="https://www.railml.org/schemas/3.1/gml")]
+    [System.Xml.Serialization.XmlTypeAttribute("AbstractCurveType", Namespace="https://www.railml.org/schemas/3.2/gml")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(LineStringType))]
@@ -54,7 +54,7 @@ namespace Schemas.Gml
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("AbstractGeometricPrimitiveType", Namespace="https://www.railml.org/schemas/3.1/gml")]
+    [System.Xml.Serialization.XmlTypeAttribute("AbstractGeometricPrimitiveType", Namespace="https://www.railml.org/schemas/3.2/gml")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AbstractCurveType))]
@@ -71,7 +71,7 @@ namespace Schemas.Gml
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("AbstractGeometryType", Namespace="https://www.railml.org/schemas/3.1/gml")]
+    [System.Xml.Serialization.XmlTypeAttribute("AbstractGeometryType", Namespace="https://www.railml.org/schemas/3.2/gml")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AbstractCurveType))]
@@ -98,7 +98,7 @@ namespace Schemas.Gml
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("AbstractGMLType", Namespace="https://www.railml.org/schemas/3.1/gml")]
+    [System.Xml.Serialization.XmlTypeAttribute("AbstractGMLType", Namespace="https://www.railml.org/schemas/3.2/gml")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AbstractCurveType))]
@@ -111,16 +111,16 @@ namespace Schemas.Gml
     public abstract partial class AbstractGMLType : IStandardObjectProperties
     {
         
-        [System.Xml.Serialization.XmlElementAttribute("description", Namespace="https://www.railml.org/schemas/3.1/gml")]
+        [System.Xml.Serialization.XmlElementAttribute("description", Namespace="https://www.railml.org/schemas/3.2/gml")]
         public StringOrRefType Description { get; set; }
         
-        [System.Xml.Serialization.XmlElementAttribute("descriptionReference", Namespace="https://www.railml.org/schemas/3.1/gml")]
+        [System.Xml.Serialization.XmlElementAttribute("descriptionReference", Namespace="https://www.railml.org/schemas/3.2/gml")]
         public ReferenceType DescriptionReference { get; set; }
         
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<CodeType> _name;
         
-        [System.Xml.Serialization.XmlElementAttribute("name", Namespace="https://www.railml.org/schemas/3.1/gml")]
+        [System.Xml.Serialization.XmlElementAttribute("name", Namespace="https://www.railml.org/schemas/3.2/gml")]
         public System.Collections.ObjectModel.Collection<CodeType> Name
         {
             get
@@ -155,7 +155,7 @@ namespace Schemas.Gml
             this._name = new System.Collections.ObjectModel.Collection<CodeType>();
         }
         
-        [System.Xml.Serialization.XmlElementAttribute("identifier", Namespace="https://www.railml.org/schemas/3.1/gml")]
+        [System.Xml.Serialization.XmlElementAttribute("identifier", Namespace="https://www.railml.org/schemas/3.2/gml")]
         public CodeWithAuthorityType Identifier { get; set; }
         
         [System.Xml.Serialization.XmlAttributeAttribute("id", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
@@ -195,7 +195,7 @@ namespace Schemas.Gml
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("StringOrRefType", Namespace="https://www.railml.org/schemas/3.1/gml")]
+    [System.Xml.Serialization.XmlTypeAttribute("StringOrRefType", Namespace="https://www.railml.org/schemas/3.2/gml")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class StringOrRefType : IAssociationAttributeGroup
@@ -231,7 +231,7 @@ namespace Schemas.Gml
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("ReferenceType", Namespace="https://www.railml.org/schemas/3.1/gml")]
+    [System.Xml.Serialization.XmlTypeAttribute("ReferenceType", Namespace="https://www.railml.org/schemas/3.2/gml")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ReferenceType : IOwnershipAttributeGroup, IAssociationAttributeGroup
@@ -272,7 +272,7 @@ namespace Schemas.Gml
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("CodeType", Namespace="https://www.railml.org/schemas/3.1/gml")]
+    [System.Xml.Serialization.XmlTypeAttribute("CodeType", Namespace="https://www.railml.org/schemas/3.2/gml")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(CodeWithAuthorityType))]
@@ -295,7 +295,7 @@ namespace Schemas.Gml
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("CodeWithAuthorityType", Namespace="https://www.railml.org/schemas/3.1/gml")]
+    [System.Xml.Serialization.XmlTypeAttribute("CodeWithAuthorityType", Namespace="https://www.railml.org/schemas/3.2/gml")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CodeWithAuthorityType : CodeType
@@ -342,7 +342,7 @@ namespace Schemas.Gml
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("DirectPositionType", Namespace="https://www.railml.org/schemas/3.1/gml")]
+    [System.Xml.Serialization.XmlTypeAttribute("DirectPositionType", Namespace="https://www.railml.org/schemas/3.2/gml")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class DirectPositionType : ISRSReferenceGroup
@@ -376,7 +376,7 @@ namespace Schemas.Gml
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("DirectPositionListType", Namespace="https://www.railml.org/schemas/3.1/gml")]
+    [System.Xml.Serialization.XmlTypeAttribute("DirectPositionListType", Namespace="https://www.railml.org/schemas/3.2/gml")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class DirectPositionListType : ISRSReferenceGroup
@@ -410,14 +410,14 @@ namespace Schemas.Gml
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("PointType", Namespace="https://www.railml.org/schemas/3.1/gml")]
+    [System.Xml.Serialization.XmlTypeAttribute("PointType", Namespace="https://www.railml.org/schemas/3.2/gml")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Schemas.PointTypeCoordinate))]
     public partial class PointType : AbstractGeometricPrimitiveType
     {
         
-        [System.Xml.Serialization.XmlElementAttribute("pos", Namespace="https://www.railml.org/schemas/3.1/gml")]
+        [System.Xml.Serialization.XmlElementAttribute("pos", Namespace="https://www.railml.org/schemas/3.2/gml")]
         public DirectPositionType Pos { get; set; }
     }
 }

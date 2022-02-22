@@ -18,7 +18,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("External", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("External", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class External
@@ -48,7 +48,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("PositioningSystems", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("PositioningSystems", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class PositioningSystems
@@ -60,8 +60,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all geometric positioning systems</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("geometricPositioningSystems", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("geometricPositioningSystem", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("geometricPositioningSystems", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("geometricPositioningSystem", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<RTM_GeometricPositioningSystem> GeometricPositioningSystems
         {
             get
@@ -104,8 +104,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all linear positioning systems</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("linearPositioningSystems", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("linearPositioningSystem", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("linearPositioningSystems", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("linearPositioningSystem", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<RTM_LinearPositioningSystem> LinearPositioningSystems
         {
             get
@@ -137,8 +137,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all screen coordinate systems</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("screenPositioningSystems", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("screenPositioningSystem", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("screenPositioningSystems", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("screenPositioningSystem", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<ScreenPositioningSystem> ScreenPositioningSystems
         {
             get
@@ -167,7 +167,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("GeometricPositioningSystems", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("GeometricPositioningSystems", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GeometricPositioningSystems
@@ -176,7 +176,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<RTM_GeometricPositioningSystem> _geometricPositioningSystem;
         
-        [System.Xml.Serialization.XmlElementAttribute("geometricPositioningSystem", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("geometricPositioningSystem", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<RTM_GeometricPositioningSystem> GeometricPositioningSystem
         {
             get
@@ -201,7 +201,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_GeometricPositioningSystem", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_GeometricPositioningSystem", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RTM_GeometricPositioningSystem : RTM_PositioningSystem
@@ -213,7 +213,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_PositioningSystem", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_PositioningSystem", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(RTM_GeometricPositioningSystem))]
@@ -225,7 +225,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<RTM_Validity> _isValid;
         
-        [System.Xml.Serialization.XmlElementAttribute("isValid", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("isValid", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<RTM_Validity> IsValid
         {
             get
@@ -250,7 +250,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_NamedResource", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_NamedResource", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Schemas.Balise))]
@@ -312,7 +312,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<Name> _name;
         
-        [System.Xml.Serialization.XmlElementAttribute("name", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("name", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Name> Name
         {
             get
@@ -353,7 +353,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_BaseObject", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_BaseObject", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Schemas.Balise))]
@@ -434,7 +434,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Name", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Name", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Name
@@ -461,7 +461,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_Validity", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_Validity", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RTM_Validity
@@ -490,7 +490,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("LinearPositioningSystems", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("LinearPositioningSystems", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LinearPositioningSystems
@@ -499,7 +499,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<RTM_LinearPositioningSystem> _linearPositioningSystem;
         
-        [System.Xml.Serialization.XmlElementAttribute("linearPositioningSystem", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("linearPositioningSystem", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<RTM_LinearPositioningSystem> LinearPositioningSystem
         {
             get
@@ -524,7 +524,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_LinearPositioningSystem", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_LinearPositioningSystem", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RTM_LinearPositioningSystem : RTM_PositioningSystem
@@ -533,7 +533,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<RTM_LinearAnchorPoint> _anchor;
         
-        [System.Xml.Serialization.XmlElementAttribute("anchor", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("anchor", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<RTM_LinearAnchorPoint> Anchor
         {
             get
@@ -586,7 +586,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_LinearAnchorPoint", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_LinearAnchorPoint", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RTM_LinearAnchorPoint : RTM_BaseObject
@@ -618,7 +618,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tLrsMethod", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tLrsMethod", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TLrsMethod
     {
         
@@ -634,7 +634,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("ScreenPositioningSystems", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("ScreenPositioningSystems", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ScreenPositioningSystems
@@ -643,7 +643,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<ScreenPositioningSystem> _screenPositioningSystem;
         
-        [System.Xml.Serialization.XmlElementAttribute("screenPositioningSystem", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("screenPositioningSystem", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<ScreenPositioningSystem> ScreenPositioningSystem
         {
             get
@@ -668,7 +668,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("ScreenPositioningSystem", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("ScreenPositioningSystem", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ScreenPositioningSystem : RTM_PositioningSystem
@@ -689,7 +689,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tElementWithIDref", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tElementWithIDref", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TElementWithIDref
@@ -705,7 +705,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("DateWithBitmask", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("DateWithBitmask", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class DateWithBitmask
@@ -731,7 +731,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tElementWithID", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tElementWithID", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Schemas.AreaProjection))]
@@ -773,7 +773,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Designator", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Designator", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Designator
@@ -794,7 +794,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("CalendarTimePeriod", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("CalendarTimePeriod", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CalendarTimePeriod : TimePeriod
@@ -823,7 +823,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("TimePeriod", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("TimePeriod", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(CalendarTimePeriod))]
@@ -839,7 +839,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Metadata", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Metadata", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Metadata : Dc.Elements.ElementContainer
@@ -851,7 +851,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("OrganizationalUnits", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("OrganizationalUnits", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class OrganizationalUnits
@@ -860,7 +860,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<InfrastructureManager> _infrastructureManager;
         
-        [System.Xml.Serialization.XmlElementAttribute("infrastructureManager", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("infrastructureManager", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<InfrastructureManager> InfrastructureManager
         {
             get
@@ -905,7 +905,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<VehicleManufacturer> _vehicleManufacturer;
         
-        [System.Xml.Serialization.XmlElementAttribute("vehicleManufacturer", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("vehicleManufacturer", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<VehicleManufacturer> VehicleManufacturer
         {
             get
@@ -934,7 +934,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<VehicleOperator> _vehicleOperator;
         
-        [System.Xml.Serialization.XmlElementAttribute("vehicleOperator", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("vehicleOperator", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<VehicleOperator> VehicleOperator
         {
             get
@@ -963,7 +963,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<Customer> _customer;
         
-        [System.Xml.Serialization.XmlElementAttribute("customer", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("customer", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Customer> Customer
         {
             get
@@ -992,7 +992,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<RailwayUndertaking> _railwayUndertaking;
         
-        [System.Xml.Serialization.XmlElementAttribute("railwayUndertaking", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("railwayUndertaking", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<RailwayUndertaking> RailwayUndertaking
         {
             get
@@ -1021,7 +1021,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<OperationalUndertaking> _operationalUndertaking;
         
-        [System.Xml.Serialization.XmlElementAttribute("operationalUndertaking", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("operationalUndertaking", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<OperationalUndertaking> OperationalUndertaking
         {
             get
@@ -1050,7 +1050,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<Concessionaire> _concessionaire;
         
-        [System.Xml.Serialization.XmlElementAttribute("concessionaire", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("concessionaire", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Concessionaire> Concessionaire
         {
             get
@@ -1079,7 +1079,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<Contractor> _contractor;
         
-        [System.Xml.Serialization.XmlElementAttribute("contractor", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("contractor", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Contractor> Contractor
         {
             get
@@ -1108,7 +1108,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("InfrastructureManager", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("InfrastructureManager", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class InfrastructureManager : OrganizationalUnit
@@ -1117,7 +1117,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("OrganizationalUnit", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("OrganizationalUnit", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Concessionaire))]
@@ -1140,7 +1140,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tElementWithIDandName", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tElementWithIDandName", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Schemas.AreaProjection))]
@@ -1170,7 +1170,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<Name> _name;
         
-        [System.Xml.Serialization.XmlElementAttribute("name", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("name", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Name> Name
         {
             get
@@ -1208,7 +1208,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("VehicleManufacturer", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("VehicleManufacturer", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class VehicleManufacturer : OrganizationalUnit
@@ -1217,7 +1217,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("VehicleOperator", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("VehicleOperator", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class VehicleOperator : OrganizationalUnit
@@ -1226,7 +1226,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Customer", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Customer", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Customer : OrganizationalUnit
@@ -1235,7 +1235,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RailwayUndertaking", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RailwayUndertaking", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RailwayUndertaking : OrganizationalUnit
@@ -1244,7 +1244,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("OperationalUndertaking", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("OperationalUndertaking", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class OperationalUndertaking : OrganizationalUnit
@@ -1253,7 +1253,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Concessionaire", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Concessionaire", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Concessionaire : OrganizationalUnit
@@ -1262,7 +1262,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Contractor", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Contractor", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Contractor : OrganizationalUnit
@@ -1271,7 +1271,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SpeedProfiles", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SpeedProfiles", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SpeedProfiles
@@ -1280,7 +1280,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<SpeedProfile> _speedProfile;
         
-        [System.Xml.Serialization.XmlElementAttribute("speedProfile", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("speedProfile", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<SpeedProfile> SpeedProfile
         {
             get
@@ -1305,22 +1305,22 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SpeedProfile", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SpeedProfile", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SpeedProfile : TElementWithIDandName, IASpeedProfile
     {
         
-        [System.Xml.Serialization.XmlElementAttribute("tilting", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("tilting", Namespace="https://www.railml.org/schemas/3.2")]
         public SpeedProfileTilting Tilting { get; set; }
         
-        [System.Xml.Serialization.XmlElementAttribute("load", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("load", Namespace="https://www.railml.org/schemas/3.2")]
         public SpeedProfileLoad Load { get; set; }
         
-        [System.Xml.Serialization.XmlElementAttribute("braking", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("braking", Namespace="https://www.railml.org/schemas/3.2")]
         public SpeedProfileBraking Braking { get; set; }
         
-        [System.Xml.Serialization.XmlElementAttribute("trainType", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("trainType", Namespace="https://www.railml.org/schemas/3.2")]
         public SpeedProfileTrainType TrainType { get; set; }
         
         [System.Xml.Serialization.XmlAttributeAttribute("influence", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
@@ -1336,7 +1336,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SpeedProfileTilting", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SpeedProfileTilting", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SpeedProfileTilting
@@ -1368,7 +1368,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tTiltingActuationType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tTiltingActuationType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TTiltingActuationType
     {
         
@@ -1387,7 +1387,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SpeedProfileLoad", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SpeedProfileLoad", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SpeedProfileLoad
@@ -1422,7 +1422,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SpeedProfileBraking", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SpeedProfileBraking", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SpeedProfileBraking
@@ -1460,7 +1460,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tAirBrakeApplicationDirection", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tAirBrakeApplicationDirection", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TAirBrakeApplicationDirection
     {
         
@@ -1485,7 +1485,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SpeedProfileTrainType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SpeedProfileTrainType", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SpeedProfileTrainType
@@ -1520,7 +1520,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tTrainType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tTrainType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TTrainType
     {
         
@@ -1547,7 +1547,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tSpeedProfileInfluence", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tSpeedProfileInfluence", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TSpeedProfileInfluence
     {
         
@@ -1560,7 +1560,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tBrakeType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tBrakeType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TBrakeType
     {
         
@@ -1597,7 +1597,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Common", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Common", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Common : TElementWithID
@@ -1609,8 +1609,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all electrificationSystem elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("electrificationSystems", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("electrificationSystem", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("electrificationSystems", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("electrificationSystem", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<ElectrificationSystem> ElectrificationSystems
         {
             get
@@ -1649,7 +1649,7 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all organizationalUnit elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("organizationalUnits", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("organizationalUnits", Namespace="https://www.railml.org/schemas/3.2")]
         public OrganizationalUnits OrganizationalUnits { get; set; }
         
         [System.Xml.Serialization.XmlIgnoreAttribute()]
@@ -1658,8 +1658,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all speedProfile elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("speedProfiles", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("speedProfile", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("speedProfiles", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("speedProfile", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<SpeedProfile> SpeedProfiles
         {
             get
@@ -1685,13 +1685,13 @@ namespace Schemas
             }
         }
         
-        [System.Xml.Serialization.XmlElementAttribute("positioning", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("positioning", Namespace="https://www.railml.org/schemas/3.2")]
         public PositioningSystems Positioning { get; set; }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("ElectrificationSystems", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("ElectrificationSystems", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ElectrificationSystems
@@ -1700,7 +1700,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<ElectrificationSystem> _electrificationSystem;
         
-        [System.Xml.Serialization.XmlElementAttribute("electrificationSystem", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("electrificationSystem", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<ElectrificationSystem> ElectrificationSystem
         {
             get
@@ -1725,7 +1725,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("ElectrificationSystem", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("ElectrificationSystem", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ElectrificationSystem : TElementWithID
@@ -1762,7 +1762,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("TimeStamp", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("TimeStamp", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TimeStamp
@@ -1781,7 +1781,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tElementTimeStamp", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tElementTimeStamp", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TElementTimeStamp
@@ -1800,7 +1800,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tElementBitmaskAny", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tElementBitmaskAny", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TElementBitmaskAny
@@ -1816,7 +1816,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tElementBitmaskWeek", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tElementBitmaskWeek", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TElementBitmaskWeek
@@ -1832,7 +1832,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("GenericTimePeriod", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("GenericTimePeriod", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GenericTimePeriod : TimePeriod
@@ -1841,7 +1841,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<TimePeriodRuleSituation> _containedSituation;
         
-        [System.Xml.Serialization.XmlElementAttribute("containedSituation", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("containedSituation", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<TimePeriodRuleSituation> ContainedSituation
         {
             get
@@ -1866,7 +1866,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("TimePeriodRuleSituation", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("TimePeriodRuleSituation", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TimePeriodRuleSituation
@@ -1875,7 +1875,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<PeriodRule> _periodRule;
         
-        [System.Xml.Serialization.XmlElementAttribute("periodRule", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("periodRule", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<PeriodRule> PeriodRule
         {
             get
@@ -1915,7 +1915,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<PublicHolidayPeriodRule> _publicHolidayPeriodRule;
         
-        [System.Xml.Serialization.XmlElementAttribute("publicHolidayPeriodRule", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("publicHolidayPeriodRule", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<PublicHolidayPeriodRule> PublicHolidayPeriodRule
         {
             get
@@ -1944,7 +1944,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<ElemBasedPeriodRule> _elementBasedPeriodRule;
         
-        [System.Xml.Serialization.XmlElementAttribute("elementBasedPeriodRule", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("elementBasedPeriodRule", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<ElemBasedPeriodRule> ElementBasedPeriodRule
         {
             get
@@ -1983,7 +1983,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("PeriodRule", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("PeriodRule", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class PeriodRule : TimePeriodRule
@@ -1992,7 +1992,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<ClockTimePeriod> _period;
         
-        [System.Xml.Serialization.XmlElementAttribute("period", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("period", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<ClockTimePeriod> Period
         {
             get
@@ -2017,7 +2017,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("TimePeriodRule", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("TimePeriodRule", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(ElemBasedPeriodRule))]
@@ -2040,7 +2040,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("ClockTimePeriod", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("ClockTimePeriod", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ClockTimePeriod : TimePeriod
@@ -2069,7 +2069,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("PublicHolidayPeriodRule", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("PublicHolidayPeriodRule", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class PublicHolidayPeriodRule : ShiftablePeriodRule
@@ -2078,7 +2078,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("ShiftablePeriodRule", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("ShiftablePeriodRule", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(ElemBasedPeriodRule))]
@@ -2092,22 +2092,22 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("ElemBasedPeriodRule", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("ElemBasedPeriodRule", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ElemBasedPeriodRule : ShiftablePeriodRule
     {
         
-        [System.Xml.Serialization.XmlElementAttribute("operatingDay", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("operatingDay", Namespace="https://www.railml.org/schemas/3.2")]
         public OperatingDay OperatingDay { get; set; }
         
-        [System.Xml.Serialization.XmlElementAttribute("genericOperatingPeriod", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("genericOperatingPeriod", Namespace="https://www.railml.org/schemas/3.2")]
         public GenericOperatingPeriodDescription GenericOperatingPeriod { get; set; }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("OperatingDay", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("OperatingDay", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class OperatingDay : PeriodRuleElement
@@ -2123,7 +2123,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("PeriodRuleElement", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("PeriodRuleElement", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(GenericOperatingPeriodDescription))]
@@ -2134,7 +2134,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("GenericOperatingPeriodDescription", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("GenericOperatingPeriodDescription", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GenericOperatingPeriodDescription : PeriodRuleElement
@@ -2143,7 +2143,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<DateWithBitmask> _dateSet;
         
-        [System.Xml.Serialization.XmlElementAttribute("dateSet", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("dateSet", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<DateWithBitmask> DateSet
         {
             get
@@ -2181,7 +2181,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("CalendarTimePeriodWithBitmask", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("CalendarTimePeriodWithBitmask", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CalendarTimePeriodWithBitmask : TimePeriod
@@ -2190,7 +2190,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<PeriodRule> _periodRule;
         
-        [System.Xml.Serialization.XmlElementAttribute("periodRule", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("periodRule", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<PeriodRule> PeriodRule
         {
             get
@@ -2245,25 +2245,25 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Period", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Period", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Period
     {
         
-        [System.Xml.Serialization.XmlElementAttribute("period", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("period", Namespace="https://www.railml.org/schemas/3.2")]
         public CalendarTimePeriod PeriodProperty { get; set; }
         
-        [System.Xml.Serialization.XmlElementAttribute("periodBitmask", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("periodBitmask", Namespace="https://www.railml.org/schemas/3.2")]
         public CalendarTimePeriodWithBitmask PeriodBitmask { get; set; }
         
-        [System.Xml.Serialization.XmlElementAttribute("periodGeneric", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("periodGeneric", Namespace="https://www.railml.org/schemas/3.2")]
         public GenericTimePeriod PeriodGeneric { get; set; }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tElementWithIDandCode", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tElementWithIDandCode", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TElementWithIDandCode : TElementWithID
@@ -2275,7 +2275,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tApplicationDirection", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tApplicationDirection", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TApplicationDirection
     {
         
@@ -2291,7 +2291,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tOrientation", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tOrientation", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TOrientation
     {
         
@@ -2304,7 +2304,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_NetEntity", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_NetEntity", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Schemas.Balise))]
@@ -2350,7 +2350,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_NetworkResource", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_NetworkResource", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Schemas.Balise))]
@@ -2405,7 +2405,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<Schemas.RTM_Validity> _isValid;
         
-        [System.Xml.Serialization.XmlElementAttribute("isValid", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("isValid", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.RTM_Validity> IsValid
         {
             get
@@ -2443,7 +2443,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_LocatedNetEntity", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_LocatedNetEntity", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Schemas.Balise))]
@@ -2488,7 +2488,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<RTM_AreaLocation> _areaLocation;
         
-        [System.Xml.Serialization.XmlElementAttribute("areaLocation", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("areaLocation", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<RTM_AreaLocation> AreaLocation
         {
             get
@@ -2528,7 +2528,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<RTM_LinearLocation> _linearLocation;
         
-        [System.Xml.Serialization.XmlElementAttribute("linearLocation", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("linearLocation", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<RTM_LinearLocation> LinearLocation
         {
             get
@@ -2557,7 +2557,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<RTM_SpotLocation> _spotLocation;
         
-        [System.Xml.Serialization.XmlElementAttribute("spotLocation", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("spotLocation", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<RTM_SpotLocation> SpotLocation
         {
             get
@@ -2586,7 +2586,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_AreaLocation", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_AreaLocation", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RTM_AreaLocation : RTM_EntityLocation
@@ -2595,7 +2595,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<RTM_AssociatedNetElement> _associatedNetElement;
         
-        [System.Xml.Serialization.XmlElementAttribute("associatedNetElement", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("associatedNetElement", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<RTM_AssociatedNetElement> AssociatedNetElement
         {
             get
@@ -2620,7 +2620,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_EntityLocation", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_EntityLocation", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(RTM_AreaLocation))]
@@ -2632,22 +2632,22 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_AssociatedNetElement", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_AssociatedNetElement", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RTM_AssociatedNetElement
     {
         
-        [System.Xml.Serialization.XmlElementAttribute("geometricCoordinateBegin", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("geometricCoordinateBegin", Namespace="https://www.railml.org/schemas/3.2")]
         public RTM_GeometricCoordinate GeometricCoordinateBegin { get; set; }
         
-        [System.Xml.Serialization.XmlElementAttribute("linearCoordinateBegin", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("linearCoordinateBegin", Namespace="https://www.railml.org/schemas/3.2")]
         public RTM_LinearCoordinate LinearCoordinateBegin { get; set; }
         
-        [System.Xml.Serialization.XmlElementAttribute("geometricCoordinateEnd", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("geometricCoordinateEnd", Namespace="https://www.railml.org/schemas/3.2")]
         public RTM_GeometricCoordinate GeometricCoordinateEnd { get; set; }
         
-        [System.Xml.Serialization.XmlElementAttribute("linearCoordinateEnd", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("linearCoordinateEnd", Namespace="https://www.railml.org/schemas/3.2")]
         public RTM_LinearCoordinate LinearCoordinateEnd { get; set; }
         
         /// <summary>
@@ -2718,7 +2718,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_GeometricCoordinate", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_GeometricCoordinate", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RTM_GeometricCoordinate : RTM_PositioningSystemCoordinate
@@ -2743,7 +2743,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_PositioningSystemCoordinate", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_PositioningSystemCoordinate", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(RTM_GeometricCoordinate))]
@@ -2760,7 +2760,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_LinearCoordinate", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_LinearCoordinate", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RTM_LinearCoordinate : RTM_PositioningSystemCoordinate
@@ -2824,7 +2824,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tLateralSide", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tLateralSide", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TLateralSide
     {
         
@@ -2837,7 +2837,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tVerticalSide", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tVerticalSide", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TVerticalSide
     {
         
@@ -2850,7 +2850,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_LinearLocation", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_LinearLocation", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RTM_LinearLocation : RTM_EntityLocation
@@ -2859,7 +2859,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<RTM_AssociatedNetElement> _associatedNetElement;
         
-        [System.Xml.Serialization.XmlElementAttribute("associatedNetElement", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("associatedNetElement", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<RTM_AssociatedNetElement> AssociatedNetElement
         {
             get
@@ -2886,7 +2886,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<RTM_LinearCoordinate> _linearCoordinate;
         
-        [System.Xml.Serialization.XmlElementAttribute("linearCoordinate", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("linearCoordinate", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<RTM_LinearCoordinate> LinearCoordinate
         {
             get
@@ -2915,7 +2915,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<RTM_GeometricCoordinate> _geometricCoordinate;
         
-        [System.Xml.Serialization.XmlElementAttribute("geometricCoordinate", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("geometricCoordinate", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<RTM_GeometricCoordinate> GeometricCoordinate
         {
             get
@@ -2957,16 +2957,16 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_SpotLocation", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_SpotLocation", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RTM_SpotLocation : RTM_EntityLocation
     {
         
-        [System.Xml.Serialization.XmlElementAttribute("linearCoordinate", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("linearCoordinate", Namespace="https://www.railml.org/schemas/3.2")]
         public RTM_LinearCoordinate LinearCoordinate { get; set; }
         
-        [System.Xml.Serialization.XmlElementAttribute("geometricCoordinate", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("geometricCoordinate", Namespace="https://www.railml.org/schemas/3.2")]
         public RTM_GeometricCoordinate GeometricCoordinate { get; set; }
         
         /// <summary>
@@ -3018,7 +3018,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_NetElement", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_NetElement", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Schemas.NetElement))]
@@ -3032,7 +3032,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> _relation;
         
-        [System.Xml.Serialization.XmlElementAttribute("relation", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("relation", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> Relation
         {
             get
@@ -3070,17 +3070,17 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_Relation", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_Relation", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Schemas.NetRelation))]
     public partial class RTM_Relation : RTM_NetworkResource
     {
         
-        [System.Xml.Serialization.XmlElementAttribute("elementA", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("elementA", Namespace="https://www.railml.org/schemas/3.2")]
         public Schemas.TElementWithIDref ElementA { get; set; }
         
-        [System.Xml.Serialization.XmlElementAttribute("elementB", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("elementB", Namespace="https://www.railml.org/schemas/3.2")]
         public Schemas.TElementWithIDref ElementB { get; set; }
         
         [System.Xml.Serialization.XmlAttributeAttribute("navigability", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
@@ -3116,7 +3116,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tNavigability", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tNavigability", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TNavigability
     {
         
@@ -3131,7 +3131,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tUsage", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tUsage", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TUsage
     {
         
@@ -3144,7 +3144,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_Network", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_Network", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Schemas.Network))]
@@ -3154,7 +3154,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<RTM_LevelNetwork> _level;
         
-        [System.Xml.Serialization.XmlElementAttribute("level", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("level", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<RTM_LevelNetwork> Level
         {
             get
@@ -3180,7 +3180,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<RTM_NetworkResource> _networkResource;
         
-        [System.Xml.Serialization.XmlElementAttribute("networkResource", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("networkResource", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<RTM_NetworkResource> NetworkResource
         {
             get
@@ -3209,7 +3209,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_LevelNetwork", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_LevelNetwork", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RTM_LevelNetwork : Schemas.RTM_BaseObject
@@ -3218,7 +3218,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> _networkResource;
         
-        [System.Xml.Serialization.XmlElementAttribute("networkResource", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("networkResource", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> NetworkResource
         {
             get
@@ -3266,7 +3266,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tDescriptionLevel", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tDescriptionLevel", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TDescriptionLevel
     {
         
@@ -3279,7 +3279,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_CompositionNetElement", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_CompositionNetElement", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Schemas.NetElement))]
@@ -3292,7 +3292,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<RTM_UnorderedCollection> _elementCollectionUnordered;
         
-        [System.Xml.Serialization.XmlElementAttribute("elementCollectionUnordered", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("elementCollectionUnordered", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<RTM_UnorderedCollection> ElementCollectionUnordered
         {
             get
@@ -3331,7 +3331,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<RTM_OrderedCollection> _elementCollectionOrdered;
         
-        [System.Xml.Serialization.XmlElementAttribute("elementCollectionOrdered", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("elementCollectionOrdered", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<RTM_OrderedCollection> ElementCollectionOrdered
         {
             get
@@ -3360,7 +3360,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_UnorderedCollection", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_UnorderedCollection", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RTM_UnorderedCollection : RTM_ElementPartCollection
@@ -3369,7 +3369,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> _elementPart;
         
-        [System.Xml.Serialization.XmlElementAttribute("elementPart", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("elementPart", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> ElementPart
         {
             get
@@ -3394,7 +3394,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_ElementPartCollection", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_ElementPartCollection", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(RTM_OrderedCollection))]
@@ -3405,7 +3405,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_OrderedCollection", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_OrderedCollection", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RTM_OrderedCollection : RTM_ElementPartCollection
@@ -3414,7 +3414,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> _elementPart;
         
-        [System.Xml.Serialization.XmlElementAttribute("elementPart", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("elementPart", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> ElementPart
         {
             get
@@ -3442,7 +3442,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_PositioningNetElement", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_PositioningNetElement", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Schemas.NetElement))]
@@ -3454,7 +3454,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<RTM_AssociatedPositioningSystem> _associatedPositioningSystem;
         
-        [System.Xml.Serialization.XmlElementAttribute("associatedPositioningSystem", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("associatedPositioningSystem", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<RTM_AssociatedPositioningSystem> AssociatedPositioningSystem
         {
             get
@@ -3479,7 +3479,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_AssociatedPositioningSystem", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_AssociatedPositioningSystem", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RTM_AssociatedPositioningSystem : Schemas.RTM_BaseObject
@@ -3488,7 +3488,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<RTM_IntrinsicCoordinate> _intrinsicCoordinate;
         
-        [System.Xml.Serialization.XmlElementAttribute("intrinsicCoordinate", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("intrinsicCoordinate", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<RTM_IntrinsicCoordinate> IntrinsicCoordinate
         {
             get
@@ -3514,7 +3514,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<Schemas.RTM_Validity> _isValid;
         
-        [System.Xml.Serialization.XmlElementAttribute("isValid", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("isValid", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.RTM_Validity> IsValid
         {
             get
@@ -3549,7 +3549,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_IntrinsicCoordinate", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_IntrinsicCoordinate", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RTM_IntrinsicCoordinate : Schemas.RTM_BaseObject
@@ -3558,7 +3558,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<RTM_LinearCoordinate> _linearCoordinate;
         
-        [System.Xml.Serialization.XmlElementAttribute("linearCoordinate", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("linearCoordinate", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<RTM_LinearCoordinate> LinearCoordinate
         {
             get
@@ -3597,7 +3597,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<RTM_GeometricCoordinate> _geometricCoordinate;
         
-        [System.Xml.Serialization.XmlElementAttribute("geometricCoordinate", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("geometricCoordinate", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<RTM_GeometricCoordinate> GeometricCoordinate
         {
             get
@@ -3629,7 +3629,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_LinearNetElement", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_LinearNetElement", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RTM_LinearNetElement : RTM_PositioningNetElement
@@ -3638,7 +3638,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RTM_NonLinearNetElement", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RTM_NonLinearNetElement", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RTM_NonLinearNetElement : RTM_PositioningNetElement
@@ -3650,7 +3650,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("netElement", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("netElement", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public  class NetElement : Schemas.RTM_PositioningNetElement
@@ -3686,7 +3686,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("NetRelation", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("NetRelation", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class NetRelation : Schemas.RTM_Relation
@@ -3695,7 +3695,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("BufferStops", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("BufferStops", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class BufferStops
@@ -3704,7 +3704,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<BufferStop> _bufferStop;
         
-        [System.Xml.Serialization.XmlElementAttribute("bufferStop", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("bufferStop", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<BufferStop> BufferStop
         {
             get
@@ -3729,7 +3729,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("BufferStop", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("BufferStop", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class BufferStop : TrackNode
@@ -3751,7 +3751,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("TrackNode", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("TrackNode", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Border))]
@@ -3764,7 +3764,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("FunctionalInfrastructureEntity", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("FunctionalInfrastructureEntity", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Balise))]
@@ -3802,7 +3802,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<Schemas.Designator> _designator;
         
-        [System.Xml.Serialization.XmlElementAttribute("designator", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("designator", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.Designator> Designator
         {
             get
@@ -3841,7 +3841,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<Schemas.External> _external;
         
-        [System.Xml.Serialization.XmlElementAttribute("external", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("external", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.External> External
         {
             get
@@ -3873,7 +3873,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("EntityIS", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("EntityIS", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Balise))]
@@ -3917,7 +3917,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<GmlLocations> _gmlLocations;
         
-        [System.Xml.Serialization.XmlElementAttribute("gmlLocations", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("gmlLocations", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<GmlLocations> GmlLocations
         {
             get
@@ -3957,7 +3957,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<LocationNetwork> _networkLocation;
         
-        [System.Xml.Serialization.XmlElementAttribute("networkLocation", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("networkLocation", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<LocationNetwork> NetworkLocation
         {
             get
@@ -4018,7 +4018,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("GmlLocations", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("GmlLocations", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GmlLocations
@@ -4027,7 +4027,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<LineTypeCoordinate> _lineString;
         
-        [System.Xml.Serialization.XmlElementAttribute("lineString", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("lineString", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<LineTypeCoordinate> LineString
         {
             get
@@ -4066,7 +4066,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<PointTypeCoordinate> _point;
         
-        [System.Xml.Serialization.XmlElementAttribute("point", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("point", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<PointTypeCoordinate> Point
         {
             get
@@ -4095,7 +4095,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("LineTypeCoordinate", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("LineTypeCoordinate", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LineTypeCoordinate : Schemas.Gml.LineStringType
@@ -4104,7 +4104,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("PointTypeCoordinate", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("PointTypeCoordinate", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class PointTypeCoordinate : Schemas.Gml.PointType
@@ -4113,7 +4113,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("LocationNetwork", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("LocationNetwork", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LocationNetwork
@@ -4137,7 +4137,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tBufferStopType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tBufferStopType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TBufferStopType
     {
         
@@ -4156,7 +4156,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("InfrastructureVisualizations", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("InfrastructureVisualizations", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class InfrastructureVisualizations
@@ -4168,7 +4168,7 @@ namespace Schemas
         /// <summary>
         /// <para>visualization of (a part of) a railway infrastructure, e.g. on a screen or a schematic map</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("visualization", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("visualization", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Visualization> Visualization
         {
             get
@@ -4193,7 +4193,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Visualization", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Visualization", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Visualization : VisualizationBaseElement
@@ -4205,7 +4205,7 @@ namespace Schemas
         /// <summary>
         /// <para>element projection as spot location (1 coordinate)</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("spotElementProjection", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("spotElementProjection", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<SpotProjection> SpotElementProjection
         {
             get
@@ -4248,7 +4248,7 @@ namespace Schemas
         /// <summary>
         /// <para>element projection as linear location (min 2 coordinates)</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("linearElementProjection", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("linearElementProjection", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<LinearProjection> LinearElementProjection
         {
             get
@@ -4280,7 +4280,7 @@ namespace Schemas
         /// <summary>
         /// <para>element projection as area location (min 3 coordinates)</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("areaElementProjection", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("areaElementProjection", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<AreaProjection> AreaElementProjection
         {
             get
@@ -4316,7 +4316,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("VisualizationBaseElement", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("VisualizationBaseElement", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AreaProjection))]
@@ -4372,7 +4372,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SpotProjection", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SpotProjection", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SpotProjection : ElementProjection
@@ -4381,13 +4381,13 @@ namespace Schemas
         /// <summary>
         /// <para>coordinate for spot projection (exact one)</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("coordinate", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("coordinate", Namespace="https://www.railml.org/schemas/3.2")]
         public ProjectionCoordinate Coordinate { get; set; }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("ElementProjection", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("ElementProjection", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AreaProjection))]
@@ -4399,7 +4399,7 @@ namespace Schemas
         /// <summary>
         /// <para>use an (external) symbol for element projection</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("usesSymbol", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("usesSymbol", Namespace="https://www.railml.org/schemas/3.2")]
         public ElementProjectionSymbol UsesSymbol { get; set; }
         
         /// <summary>
@@ -4412,7 +4412,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("ElementProjectionSymbol", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("ElementProjectionSymbol", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ElementProjectionSymbol : VisualizationBaseElement
@@ -4421,7 +4421,7 @@ namespace Schemas
         /// <summary>
         /// <para>coordinate, where the icon or symbol shall be placed with its reference point</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("isLocatedAt", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("isLocatedAt", Namespace="https://www.railml.org/schemas/3.2")]
         public ProjectionCoordinate IsLocatedAt { get; set; }
         
         /// <summary>
@@ -4439,7 +4439,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("ProjectionCoordinate", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("ProjectionCoordinate", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ProjectionCoordinate
@@ -4471,7 +4471,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("LinearProjection", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("LinearProjection", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LinearProjection : ElementProjection
@@ -4483,7 +4483,7 @@ namespace Schemas
         /// <summary>
         /// <para>coordinates for linear projection (min 2)</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("coordinate", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("coordinate", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<ProjectionCoordinate> Coordinate
         {
             get
@@ -4508,7 +4508,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("AreaProjection", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("AreaProjection", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class AreaProjection : ElementProjection
@@ -4520,7 +4520,7 @@ namespace Schemas
         /// <summary>
         /// <para>coordinates for area projection (min 3 whereas first and last coordinate have to be identical to close the polygon)</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("coordinate", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("coordinate", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<ProjectionCoordinate> Coordinate
         {
             get
@@ -4545,7 +4545,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SignalCatenary", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SignalCatenary", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SignalCatenary : SignalX
@@ -4554,7 +4554,7 @@ namespace Schemas
         /// <summary>
         /// <para>reference to an electrification section</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("refersToElectrificationSection", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("refersToElectrificationSection", Namespace="https://www.railml.org/schemas/3.2")]
         public Schemas.TElementWithIDref RefersToElectrificationSection { get; set; }
         
         [System.Xml.Serialization.XmlAttributeAttribute("type", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
@@ -4570,7 +4570,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SignalX", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SignalX", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(SignalAnnouncement))]
@@ -4632,7 +4632,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tSignalCatenaryType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tSignalCatenaryType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TSignalCatenaryType
     {
         
@@ -4645,7 +4645,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tMaxTrainCurrentOperation", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tMaxTrainCurrentOperation", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TMaxTrainCurrentOperation
     {
         
@@ -4658,7 +4658,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tLineCoordinateTrack", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tLineCoordinateTrack", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TLineCoordinateTrack
     {
         
@@ -4674,7 +4674,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("PhysicalFacilities", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("PhysicalFacilities", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public class PhysicalFacilities
@@ -4727,7 +4727,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Line", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Line", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Line : FunctionalInfrastructureEntity
@@ -4736,13 +4736,13 @@ namespace Schemas
         /// <summary>
         /// <para>reference to the operational point where the line (section) begins</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("beginsInOP", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("beginsInOP", Namespace="https://www.railml.org/schemas/3.2")]
         public Schemas.TElementWithIDref BeginsInOP { get; set; }
         
         /// <summary>
         /// <para>reference to the operational point where the line (section) ends</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("endsInOP", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("endsInOP", Namespace="https://www.railml.org/schemas/3.2")]
         public Schemas.TElementWithIDref EndsInOP { get; set; }
         
         [System.Xml.Serialization.XmlIgnoreAttribute()]
@@ -4751,7 +4751,7 @@ namespace Schemas
         /// <summary>
         /// <para>length of the line (section)</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("length", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("length", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Length> Length
         {
             get
@@ -4794,7 +4794,7 @@ namespace Schemas
         /// <summary>
         /// <para>TSI category of line as defined in TSI INF section 4.2.1; There should be one code for each type of traffic (passenger, freight) allowed on that line</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("lineTrafficCode", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("lineTrafficCode", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<LineTrafficCode> LineTrafficCode
         {
             get
@@ -4826,7 +4826,7 @@ namespace Schemas
         /// <summary>
         /// <para>standard combined transport profile number as defined in UIC Code 596-6</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("lineCombinedTransportCode", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("lineCombinedTransportCode", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<LineCombinedTransportCode> LineCombinedTransportCode
         {
             get
@@ -4855,13 +4855,13 @@ namespace Schemas
         /// <summary>
         /// <para>child element summarizing the line layout parameters</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("lineLayout", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("lineLayout", Namespace="https://www.railml.org/schemas/3.2")]
         public LineLayout LineLayout { get; set; }
         
         /// <summary>
         /// <para>child element summarizing the line performance parameters</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("linePerformance", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("linePerformance", Namespace="https://www.railml.org/schemas/3.2")]
         public LinePerformance LinePerformance { get; set; }
         
         /// <summary>
@@ -4907,7 +4907,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Length", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Length", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Length
@@ -4942,7 +4942,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tExtendedDirection", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tExtendedDirection", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TExtendedDirection
     {
         
@@ -4958,7 +4958,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("LineTrafficCode", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("LineTrafficCode", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LineTrafficCode
@@ -4973,7 +4973,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("LineCombinedTransportCode", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("LineCombinedTransportCode", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LineCombinedTransportCode
@@ -4994,7 +4994,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("LineLayout", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("LineLayout", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LineLayout : IAnyAttribute
@@ -5084,7 +5084,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tNumberOfTracks", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tNumberOfTracks", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TNumberOfTracks
     {
         
@@ -5115,7 +5115,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("LinePerformance", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("LinePerformance", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LinePerformance
@@ -5127,7 +5127,7 @@ namespace Schemas
         /// <summary>
         /// <para>reference to a vehicle loading gauge that is allowed on this line</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("allowedLoadingGauge", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("allowedLoadingGauge", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> AllowedLoadingGauge
         {
             get
@@ -5169,7 +5169,7 @@ namespace Schemas
         /// <summary>
         /// <para>reference to a weight limit (axle load, metre load) that is allowed on that line</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("allowedWeight", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("allowedWeight", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> AllowedWeight
         {
             get
@@ -5240,7 +5240,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tLineType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tLineType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TLineType
     {
         
@@ -5259,7 +5259,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("GeometryEntity", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("GeometryEntity", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(GeometryCurve))]
@@ -5275,7 +5275,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    //[System.Xml.Serialization.XmlType("topology", Namespace="https://www.railml.org/schemas/3.1")]
+    //[System.Xml.Serialization.XmlType("topology", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public class Topology
@@ -5287,8 +5287,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all netElement elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("netElements", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("netElement", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("netElements", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("netElement", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<NetElement> NetElements
         {
             get
@@ -5318,8 +5318,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all netRelation elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("netRelations", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("netRelation", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("netRelations", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("netRelation", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<NetRelation> NetRelations
         {
             get
@@ -5351,8 +5351,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all network elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("networks", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("network", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("networks", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("network", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Network> Networks
         {
             get
@@ -5368,7 +5368,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("NetElements", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("NetElements", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class NetElements
@@ -5377,7 +5377,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<NetElement> _netElement;
         
-        [System.Xml.Serialization.XmlElementAttribute("netElement", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("netElement", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<NetElement> NetElement
         {
             get
@@ -5402,7 +5402,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("NetRelations", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("NetRelations", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class NetRelations
@@ -5411,7 +5411,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<NetRelation> _netRelation;
         
-        [System.Xml.Serialization.XmlElementAttribute("netRelation", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("netRelation", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<NetRelation> NetRelation
         {
             get
@@ -5436,7 +5436,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Networks", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Networks", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Networks
@@ -5445,7 +5445,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<Network> _network;
         
-        [System.Xml.Serialization.XmlElementAttribute("network", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("network", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Network> Network
         {
             get
@@ -5473,7 +5473,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Network", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Network", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Network : Schemas.RTM_Network
@@ -5485,7 +5485,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("UnderCrossing", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("UnderCrossing", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class UnderCrossing : XCrossing, IAVerbalConstraint
@@ -5497,7 +5497,7 @@ namespace Schemas
         /// <summary>
         /// <para>reference to weight limit classes that are allowed to pass over this under crossing</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("allowedWeightLimit", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("allowedWeightLimit", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> AllowedWeightLimit
         {
             get
@@ -5539,7 +5539,7 @@ namespace Schemas
         /// <summary>
         /// <para>length of the under crossing relative to the railway in metres</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("length", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("length", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Length> Length
         {
             get
@@ -5587,7 +5587,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("XCrossing", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("XCrossing", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(LevelCrossingIS))]
@@ -5599,7 +5599,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<CrossedElement> _crossesElement;
         
-        [System.Xml.Serialization.XmlElementAttribute("crossesElement", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("crossesElement", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<CrossedElement> CrossesElement
         {
             get
@@ -5637,7 +5637,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("CrossedElement", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("CrossedElement", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CrossedElement : Schemas.TElementWithIDandName
@@ -5676,7 +5676,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("OverCrossing", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("OverCrossing", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class OverCrossing : XCrossing, IAVerbalConstraint
@@ -5688,7 +5688,7 @@ namespace Schemas
         /// <summary>
         /// <para>reference to train clearance gauge classes that are allowed to pass through the over crossing</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("allowedLoadingGauge", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("allowedLoadingGauge", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> AllowedLoadingGauge
         {
             get
@@ -5730,7 +5730,7 @@ namespace Schemas
         /// <summary>
         /// <para>length of the over crossing relative to the railway in metres</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("length", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("length", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Length> Length
         {
             get
@@ -5778,7 +5778,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tLineCategory", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tLineCategory", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TLineCategory
     {
         
@@ -5848,7 +5848,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Crossing", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Crossing", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Crossing : TrackNode
@@ -5857,7 +5857,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SwitchCrossingBranch", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SwitchCrossingBranch", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SwitchCrossingBranch
@@ -5927,7 +5927,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tMaxTrainCurrentValid", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tMaxTrainCurrentValid", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TMaxTrainCurrentValid
     {
         
@@ -5940,7 +5940,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("HorizontalCurve", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("HorizontalCurve", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class HorizontalCurve : GeometryCurve
@@ -6017,7 +6017,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("GeometryCurve", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("GeometryCurve", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(GradientCurve))]
@@ -6028,19 +6028,19 @@ namespace Schemas
         /// <summary>
         /// <para>reference to a &lt;geometryPoint&gt; that marks the begin of the curve</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("beginsInGeometryPoint", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("beginsInGeometryPoint", Namespace="https://www.railml.org/schemas/3.2")]
         public Schemas.TElementWithIDref BeginsInGeometryPoint { get; set; }
         
         /// <summary>
         /// <para>reference to a &lt;geometryPoint&gt; that marks the end of the curve</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("endsInGeometryPoint", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("endsInGeometryPoint", Namespace="https://www.railml.org/schemas/3.2")]
         public Schemas.TElementWithIDref EndsInGeometryPoint { get; set; }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("GradientCurve", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("GradientCurve", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GradientCurve : GeometryCurve
@@ -6114,7 +6114,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tGradientCurveType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tGradientCurveType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TGradientCurveType
     {
         
@@ -6142,7 +6142,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("geometry", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("geometry", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public class Geometry
@@ -6154,8 +6154,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all horizontalCurve elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("horizontalCurves", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("horizontalCurve", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("horizontalCurves", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("horizontalCurve", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<HorizontalCurve> HorizontalCurves
         {
             get
@@ -6199,8 +6199,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all gradientCurve elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("gradientCurves", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("gradientCurve", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("gradientCurves", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("gradientCurve", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<GradientCurve> GradientCurves
         {
             get
@@ -6232,8 +6232,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all geometryPoint elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("geometryPoints", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("geometryPoint", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("geometryPoints", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("geometryPoint", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<GeometryPoint> GeometryPoints
         {
             get
@@ -6294,7 +6294,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("HorizontalCurves", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("HorizontalCurves", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class HorizontalCurves
@@ -6303,7 +6303,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<HorizontalCurve> _horizontalCurve;
         
-        [System.Xml.Serialization.XmlElementAttribute("horizontalCurve", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("horizontalCurve", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<HorizontalCurve> HorizontalCurve
         {
             get
@@ -6328,7 +6328,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("GradientCurves", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("GradientCurves", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GradientCurves
@@ -6337,7 +6337,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<GradientCurve> _gradientCurve;
         
-        [System.Xml.Serialization.XmlElementAttribute("gradientCurve", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("gradientCurve", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<GradientCurve> GradientCurve
         {
             get
@@ -6362,7 +6362,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("GeometryPoints", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("GeometryPoints", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GeometryPoints
@@ -6371,7 +6371,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<GeometryPoint> _geometryPoint;
         
-        [System.Xml.Serialization.XmlElementAttribute("geometryPoint", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("geometryPoint", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<GeometryPoint> GeometryPoint
         {
             get
@@ -6396,7 +6396,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("GeometryPoint", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("GeometryPoint", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GeometryPoint : GeometryEntity
@@ -6448,7 +6448,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tLevelCrossingActivation", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tLevelCrossingActivation", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TLevelCrossingActivation
     {
         
@@ -6488,7 +6488,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Border", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Border", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Border : TrackNode
@@ -6500,7 +6500,7 @@ namespace Schemas
         /// <summary>
         /// <para>reference to a functional infrastructure element that marks the border</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("markedByInfrastructureElement", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("markedByInfrastructureElement", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> MarkedByInfrastructureElement
         {
             get
@@ -6566,7 +6566,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("FunctionalInfrastructure", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("FunctionalInfrastructure", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public class FunctionalInfrastructure
@@ -6578,8 +6578,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all balise (and balise group) elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("balises", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("balise", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("balises", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("balise", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Balise> Balises
         {
             get
@@ -6647,8 +6647,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all border elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("borders", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("border", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("borders", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("border", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Border> Borders
         {
             get
@@ -6680,8 +6680,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all bufferStop elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("bufferStops", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("bufferStop", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("bufferStops", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("bufferStop", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<BufferStop> BufferStops
         {
             get
@@ -6713,8 +6713,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all crossing elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("crossings", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("crossing", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("crossings", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("crossing", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Crossing> Crossings
         {
             get
@@ -6746,8 +6746,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all derailer elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("derailersIS", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("derailerIS", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("derailersIS", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("derailerIS", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<DerailerIS> DerailersIS
         {
             get
@@ -6779,8 +6779,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all electrification elements incl. electrification system components</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("electrifications", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("electrificationSection", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("electrifications", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("electrificationSection", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<ElectrificationSection> Electrifications
         {
             get
@@ -6812,8 +6812,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all keyLock elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("keyLocksIS", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("keyLockIS", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("keyLocksIS", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("keyLockIS", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<KeyLockIS> KeyLocksIS
         {
             get
@@ -6845,8 +6845,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all levelCrossing elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("levelCrossingsIS", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("levelCrossingIS", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("levelCrossingsIS", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("levelCrossingIS", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<LevelCrossingIS> LevelCrossingsIS
         {
             get
@@ -6878,8 +6878,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all line (section) elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("lines", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("line", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("lines", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("line", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Line> Lines
         {
             get
@@ -6911,8 +6911,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all loadingGauge elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("loadingGauges", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("loadingGauge", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("loadingGauges", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("loadingGauge", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<LoadingGauge> LoadingGauges
         {
             get
@@ -6944,8 +6944,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all operationalPoint elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("operationalPoints", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("operationalPoint", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("operationalPoints", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("operationalPoint", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<OperationalPoint> OperationalPoints
         {
             get
@@ -6977,8 +6977,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all overCrossing elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("overCrossings", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("overCrossing", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("overCrossings", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("overCrossing", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<OverCrossing> OverCrossings
         {
             get
@@ -7010,8 +7010,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all platform (and platform edge) elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("platforms", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("platform", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("platforms", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("platform", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Platform> Platforms
         {
             get
@@ -7043,8 +7043,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all restrictionArea elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("restrictionAreas", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("restrictionArea", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("restrictionAreas", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("restrictionArea", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<RestrictionArea> RestrictionAreas
         {
             get
@@ -7076,8 +7076,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all serviceSection elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("serviceSections", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("serviceSection", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("serviceSections", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("serviceSection", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<ServiceSection> ServiceSections
         {
             get
@@ -7109,8 +7109,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all signal (and panel) elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("signalsIS", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("signalIS", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("signalsIS", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("signalIS", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<SignalIS> SignalsIS
         {
             get
@@ -7142,8 +7142,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all line/track speed related elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("speeds", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("speedSection", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("speeds", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("speedSection", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<SpeedSection> Speeds
         {
             get
@@ -7175,8 +7175,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all stoppingPlace elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("stoppingPlaces", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("stoppingPlace", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("stoppingPlaces", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("stoppingPlace", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<StoppingPlace> StoppingPlaces
         {
             get
@@ -7208,8 +7208,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all switch elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("switchesIS", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("switchIS", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("switchesIS", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("switchIS", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<SwitchIS> SwitchesIS
         {
             get
@@ -7241,8 +7241,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all track elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("tracks", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("track", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("tracks", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("track", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Track> Tracks
         {
             get
@@ -7274,8 +7274,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all trackBed elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("trackBeds", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("trackBed", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("trackBeds", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("trackBed", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<TrackBed> TrackBeds
         {
             get
@@ -7307,8 +7307,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all trackGauge elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("trackGauges", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("trackGauge", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("trackGauges", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("trackGauge", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<TrackGauge> TrackGauges
         {
             get
@@ -7340,8 +7340,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all trainDetectionElement elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("trainDetectionElements", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("trainDetectionElement", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("trainDetectionElements", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("trainDetectionElement", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<TrainDetectionElement> TrainDetectionElements
         {
             get
@@ -7373,8 +7373,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all trainProtectionElement elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("trainProtectionElements", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("trainProtectionElement", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("trainProtectionElements", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("trainProtectionElement", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<TrainProtectionElement> TrainProtectionElements
         {
             get
@@ -7406,8 +7406,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all trainRadio elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("trainRadios", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("trainRadio", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("trainRadios", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("trainRadio", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<TrainRadio> TrainRadios
         {
             get
@@ -7439,8 +7439,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all underCrossing elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("underCrossings", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("underCrossing", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("underCrossings", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("underCrossing", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<UnderCrossing> UnderCrossings
         {
             get
@@ -7472,8 +7472,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for all weightLimit (axle load, meterload) elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("weightLimits", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("weightLimit", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("weightLimits", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("weightLimit", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<WeightLimit> WeightLimits
         {
             get
@@ -7534,7 +7534,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Balises", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Balises", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Balises
@@ -7543,7 +7543,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<Balise> _balise;
         
-        [System.Xml.Serialization.XmlElementAttribute("balise", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("balise", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Balise> Balise
         {
             get
@@ -7581,7 +7581,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Balise", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Balise", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Balise : FunctionalInfrastructureEntity
@@ -7636,7 +7636,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tBaliseType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tBaliseType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TBaliseType
     {
         
@@ -7649,7 +7649,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Borders", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Borders", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Borders
@@ -7658,7 +7658,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<Border> _border;
         
-        [System.Xml.Serialization.XmlElementAttribute("border", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("border", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Border> Border
         {
             get
@@ -7683,7 +7683,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Crossings", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Crossings", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Crossings
@@ -7692,7 +7692,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<Crossing> _crossing;
         
-        [System.Xml.Serialization.XmlElementAttribute("crossing", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("crossing", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Crossing> Crossing
         {
             get
@@ -7717,7 +7717,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("DerailersIS", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("DerailersIS", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class DerailersIS
@@ -7726,7 +7726,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<DerailerIS> _derailerIS;
         
-        [System.Xml.Serialization.XmlElementAttribute("derailerIS", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("derailerIS", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<DerailerIS> DerailerIS
         {
             get
@@ -7751,7 +7751,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("DerailerIS", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("DerailerIS", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class DerailerIS : FunctionalInfrastructureEntity
@@ -7773,7 +7773,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tSide", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tSide", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TSide
     {
         
@@ -7789,7 +7789,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Electrifications", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Electrifications", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Electrifications
@@ -7798,7 +7798,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<ElectrificationSection> _electrificationSection;
         
-        [System.Xml.Serialization.XmlElementAttribute("electrificationSection", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("electrificationSection", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<ElectrificationSection> ElectrificationSection
         {
             get
@@ -7823,7 +7823,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("ElectrificationSection", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("ElectrificationSection", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ElectrificationSection : FunctionalInfrastructureEntity
@@ -7832,31 +7832,31 @@ namespace Schemas
         /// <summary>
         /// <para>reference to the electrification system</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("electrificationSystemRef", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("electrificationSystemRef", Namespace="https://www.railml.org/schemas/3.2")]
         public Schemas.TElementWithIDref ElectrificationSystemRef { get; set; }
         
         /// <summary>
         /// <para>child element summarizing the catenary energy parameters</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("energyCatenary", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("energyCatenary", Namespace="https://www.railml.org/schemas/3.2")]
         public EnergyCatenary EnergyCatenary { get; set; }
         
         /// <summary>
         /// <para>child element summarizing the pantograph energy parameters</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("energyPantograph", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("energyPantograph", Namespace="https://www.railml.org/schemas/3.2")]
         public EnergyPantograph EnergyPantograph { get; set; }
         
         /// <summary>
         /// <para>child element summarizing the rollingstock energy parameters</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("energyRollingstock", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("energyRollingstock", Namespace="https://www.railml.org/schemas/3.2")]
         public EnergyRollingstock EnergyRollingstock { get; set; }
         
         /// <summary>
         /// <para>child element summarizing the construction details of the contact wire</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("hasContactWire", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("hasContactWire", Namespace="https://www.railml.org/schemas/3.2")]
         public ContactWire HasContactWire { get; set; }
         
         [System.Xml.Serialization.XmlIgnoreAttribute()]
@@ -7865,7 +7865,7 @@ namespace Schemas
         /// <summary>
         /// <para>child element summarizing the pantograph spacing parameters</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("pantographSpacing", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("pantographSpacing", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<PantographSpacing> PantographSpacing
         {
             get
@@ -7908,7 +7908,7 @@ namespace Schemas
         /// <summary>
         /// <para>child element summarizing the phase separation parameters</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("phaseSeparationSection", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("phaseSeparationSection", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<PhaseSeparationSection> PhaseSeparationSection
         {
             get
@@ -7940,7 +7940,7 @@ namespace Schemas
         /// <summary>
         /// <para>child element summarizing the electrification system separation parameters</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("systemSeparationSection", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("systemSeparationSection", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<SystemSeparationSection> SystemSeparationSection
         {
             get
@@ -7995,7 +7995,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("EnergyCatenary", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("EnergyCatenary", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class EnergyCatenary
@@ -8007,7 +8007,7 @@ namespace Schemas
         /// <summary>
         /// <para>maximum current that can be accessed in the described electrification section</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("maxTrainCurrent", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("maxTrainCurrent", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<MaxTrainCurrent> MaxTrainCurrent
         {
             get
@@ -8058,7 +8058,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("MaxTrainCurrent", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("MaxTrainCurrent", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class MaxTrainCurrent
@@ -8119,7 +8119,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tOperationalTrainType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tOperationalTrainType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TOperationalTrainType
     {
         
@@ -8138,7 +8138,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("EnergyPantograph", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("EnergyPantograph", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class EnergyPantograph
@@ -8228,7 +8228,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("EnergyRollingstock", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("EnergyRollingstock", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class EnergyRollingstock
@@ -8302,7 +8302,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tRSFireCategoryType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tRSFireCategoryType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TRSFireCategoryType
     {
         
@@ -8316,7 +8316,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("ContactWire", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("ContactWire", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ContactWire
@@ -8367,7 +8367,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("PantographSpacing", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("PantographSpacing", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class PantographSpacing
@@ -8410,7 +8410,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("PhaseSeparationSection", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("PhaseSeparationSection", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class PhaseSeparationSection
@@ -8459,7 +8459,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SystemSeparationSection", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SystemSeparationSection", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SystemSeparationSection
@@ -8521,7 +8521,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tContactLineType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tContactLineType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TContactLineType
     {
         
@@ -8546,7 +8546,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("KeyLocksIS", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("KeyLocksIS", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class KeyLocksIS
@@ -8555,7 +8555,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<KeyLockIS> _keyLockIS;
         
-        [System.Xml.Serialization.XmlElementAttribute("keyLockIS", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("keyLockIS", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<KeyLockIS> KeyLockIS
         {
             get
@@ -8580,7 +8580,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("KeyLockIS", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("KeyLockIS", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class KeyLockIS : FunctionalInfrastructureEntity
@@ -8589,7 +8589,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("LevelCrossingsIS", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("LevelCrossingsIS", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LevelCrossingsIS
@@ -8598,7 +8598,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<LevelCrossingIS> _levelCrossingIS;
         
-        [System.Xml.Serialization.XmlElementAttribute("levelCrossingIS", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("levelCrossingIS", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<LevelCrossingIS> LevelCrossingIS
         {
             get
@@ -8623,7 +8623,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("LevelCrossingIS", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("LevelCrossingIS", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LevelCrossingIS : XCrossing
@@ -8632,7 +8632,7 @@ namespace Schemas
         /// <summary>
         /// <para>summary of technical protection of the level crossing</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("protection", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("protection", Namespace="https://www.railml.org/schemas/3.2")]
         public LevelCrossingProtection Protection { get; set; }
         
         /// <summary>
@@ -8708,7 +8708,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("LevelCrossingProtection", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("LevelCrossingProtection", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LevelCrossingProtection
@@ -8748,7 +8748,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tLevelCrossingObstacleDetection", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tLevelCrossingObstacleDetection", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TLevelCrossingObstacleDetection
     {
         
@@ -8773,7 +8773,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tLevelCrossingSupervision", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tLevelCrossingSupervision", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TLevelCrossingSupervision
     {
         
@@ -8804,7 +8804,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Lines", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Lines", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Lines
@@ -8813,7 +8813,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<Line> _line;
         
-        [System.Xml.Serialization.XmlElementAttribute("line", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("line", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Line> Line
         {
             get
@@ -8841,7 +8841,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("LoadingGauges", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("LoadingGauges", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LoadingGauges
@@ -8850,7 +8850,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<LoadingGauge> _loadingGauge;
         
-        [System.Xml.Serialization.XmlElementAttribute("loadingGauge", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("loadingGauge", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<LoadingGauge> LoadingGauge
         {
             get
@@ -8878,7 +8878,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("LoadingGauge", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("LoadingGauge", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LoadingGauge : FunctionalInfrastructureEntity
@@ -8894,7 +8894,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("OperationalPoints", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("OperationalPoints", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class OperationalPoints
@@ -8903,7 +8903,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<OperationalPoint> _operationalPoint;
         
-        [System.Xml.Serialization.XmlElementAttribute("operationalPoint", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("operationalPoint", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<OperationalPoint> OperationalPoint
         {
             get
@@ -8931,7 +8931,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("OperationalPoint", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("OperationalPoint", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class OperationalPoint : FunctionalInfrastructureEntity
@@ -8940,7 +8940,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> _infrastructureManagerRef;
         
-        [System.Xml.Serialization.XmlElementAttribute("infrastructureManagerRef", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("infrastructureManagerRef", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> InfrastructureManagerRef
         {
             get
@@ -8984,7 +8984,7 @@ namespace Schemas
         /// <summary>
         /// <para>reference to a railway line (section) that is connected with this operational point</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("connectedToLine", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("connectedToLine", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> ConnectedToLine
         {
             get
@@ -9016,7 +9016,7 @@ namespace Schemas
         /// <summary>
         /// <para>reference to a border element that delimits the operational point</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("limitedByBorder", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("limitedByBorder", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> LimitedByBorder
         {
             get
@@ -9045,7 +9045,7 @@ namespace Schemas
         /// <summary>
         /// <para>child element summarizing the equipment of the operational point</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("opEquipment", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("opEquipment", Namespace="https://www.railml.org/schemas/3.2")]
         public OpEquipment OpEquipment { get; set; }
         
         [System.Xml.Serialization.XmlIgnoreAttribute()]
@@ -9054,8 +9054,8 @@ namespace Schemas
         /// <summary>
         /// <para>child element summarizing the operational aspects of the operational point</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("opOperations", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("opOperation", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("opOperations", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("opOperation", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<OpOperation> OpOperations
         {
             get
@@ -9104,7 +9104,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("OpEquipment", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("OpEquipment", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class OpEquipment
@@ -9116,7 +9116,7 @@ namespace Schemas
         /// <summary>
         /// <para>reference to a platform element that belongs to the operational point</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("ownsPlatform", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("ownsPlatform", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> OwnsPlatform
         {
             get
@@ -9161,7 +9161,7 @@ namespace Schemas
         /// <summary>
         /// <para>reference to a track element that belongs to the operational point</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("ownsTrack", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("ownsTrack", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> OwnsTrack
         {
             get
@@ -9193,7 +9193,7 @@ namespace Schemas
         /// <summary>
         /// <para>reference to a signal element that belongs to the operational point</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("ownsSignal", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("ownsSignal", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> OwnsSignal
         {
             get
@@ -9225,7 +9225,7 @@ namespace Schemas
         /// <summary>
         /// <para>reference to a stopping place element that belongs to the operational point</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("ownsStoppingPlace", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("ownsStoppingPlace", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> OwnsStoppingPlace
         {
             get
@@ -9257,7 +9257,7 @@ namespace Schemas
         /// <summary>
         /// <para>reference to a service section element that belongs to the operational point</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("ownsServiceSection", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("ownsServiceSection", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> OwnsServiceSection
         {
             get
@@ -9292,7 +9292,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("OpOperations", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("OpOperations", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class OpOperations
@@ -9304,7 +9304,7 @@ namespace Schemas
         /// <summary>
         /// <para>railway operation</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("opOperation", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("opOperation", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<OpOperation> OpOperation
         {
             get
@@ -9329,7 +9329,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("OpOperation", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("OpOperation", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class OpOperation
@@ -9350,7 +9350,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("OverCrossings", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("OverCrossings", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class OverCrossings
@@ -9359,7 +9359,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<OverCrossing> _overCrossing;
         
-        [System.Xml.Serialization.XmlElementAttribute("overCrossing", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("overCrossing", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<OverCrossing> OverCrossing
         {
             get
@@ -9384,7 +9384,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Platforms", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Platforms", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Platforms
@@ -9393,7 +9393,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<Platform> _platform;
         
-        [System.Xml.Serialization.XmlElementAttribute("platform", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("platform", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Platform> Platform
         {
             get
@@ -9418,7 +9418,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Platform", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Platform", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Platform : FunctionalInfrastructureEntity
@@ -9430,7 +9430,7 @@ namespace Schemas
         /// <summary>
         /// <para>reference to platform edge that belongs to this platform</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("ownsPlatformEdge", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("ownsPlatformEdge", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> OwnsPlatformEdge
         {
             get
@@ -9473,7 +9473,7 @@ namespace Schemas
         /// <summary>
         /// <para>width of the platform</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("width", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("width", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Length> Width
         {
             get
@@ -9505,7 +9505,7 @@ namespace Schemas
         /// <summary>
         /// <para>length of the platform (edge)</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("length", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("length", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Length> Length
         {
             get
@@ -9563,7 +9563,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RestrictionAreas", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RestrictionAreas", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RestrictionAreas
@@ -9572,7 +9572,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<RestrictionArea> _restrictionArea;
         
-        [System.Xml.Serialization.XmlElementAttribute("restrictionArea", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("restrictionArea", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<RestrictionArea> RestrictionArea
         {
             get
@@ -9597,7 +9597,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("RestrictionArea", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("RestrictionArea", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RestrictionArea : FunctionalInfrastructureEntity
@@ -9612,7 +9612,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("ServiceSections", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("ServiceSections", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ServiceSections
@@ -9621,7 +9621,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<ServiceSection> _serviceSection;
         
-        [System.Xml.Serialization.XmlElementAttribute("serviceSection", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("serviceSection", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<ServiceSection> ServiceSection
         {
             get
@@ -9646,7 +9646,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("ServiceSection", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("ServiceSection", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ServiceSection : FunctionalInfrastructureEntity, IAServiceSection
@@ -9909,7 +9909,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SignalsIS", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SignalsIS", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SignalsIS
@@ -9918,7 +9918,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<SignalIS> _signalIS;
         
-        [System.Xml.Serialization.XmlElementAttribute("signalIS", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("signalIS", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<SignalIS> SignalIS
         {
             get
@@ -9943,64 +9943,64 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SignalIS", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SignalIS", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SignalIS : FunctionalInfrastructureEntity
     {
         
-        [System.Xml.Serialization.XmlElementAttribute("isAnnouncementSignal", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("isAnnouncementSignal", Namespace="https://www.railml.org/schemas/3.2")]
         public SignalAnnouncement IsAnnouncementSignal { get; set; }
         
         /// <summary>
         /// <para>use this child element to specify the catenary signal/sign in more detail</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("isCatenarySignal", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("isCatenarySignal", Namespace="https://www.railml.org/schemas/3.2")]
         public SignalCatenary IsCatenarySignal { get; set; }
         
-        [System.Xml.Serialization.XmlElementAttribute("isDangerSignal", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("isDangerSignal", Namespace="https://www.railml.org/schemas/3.2")]
         public SignalDanger IsDangerSignal { get; set; }
         
         /// <summary>
         /// <para>use this child element to specify the ETCS signal in more detail</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("isEtcsSignal", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("isEtcsSignal", Namespace="https://www.railml.org/schemas/3.2")]
         public SignalEtcs IsEtcsSignal { get; set; }
         
-        [System.Xml.Serialization.XmlElementAttribute("isInformationSignal", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("isInformationSignal", Namespace="https://www.railml.org/schemas/3.2")]
         public SignalInformation IsInformationSignal { get; set; }
         
         /// <summary>
         /// <para>use this child element to specify the level crossing signal in more detail</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("isLevelCrossingSignal", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("isLevelCrossingSignal", Namespace="https://www.railml.org/schemas/3.2")]
         public SignalLevelCrossing IsLevelCrossingSignal { get; set; }
         
         /// <summary>
         /// <para>use this child element to specify the milepost marker in more detail</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("isMilepost", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("isMilepost", Namespace="https://www.railml.org/schemas/3.2")]
         public SignalMilepost IsMilepost { get; set; }
         
         /// <summary>
         /// <para>use this child element to specify the speed signal in more detail</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("isSpeedSignal", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("isSpeedSignal", Namespace="https://www.railml.org/schemas/3.2")]
         public SignalSpeed IsSpeedSignal { get; set; }
         
         /// <summary>
         /// <para>use this child element to specify the stop post in more detail</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("isStopPost", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("isStopPost", Namespace="https://www.railml.org/schemas/3.2")]
         public SignalStopPost IsStopPost { get; set; }
         
-        [System.Xml.Serialization.XmlElementAttribute("isTrainMovementSignal", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("isTrainMovementSignal", Namespace="https://www.railml.org/schemas/3.2")]
         public SignalTrainMovement IsTrainMovementSignal { get; set; }
         
-        [System.Xml.Serialization.XmlElementAttribute("isTrainRadioSignal", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("isTrainRadioSignal", Namespace="https://www.railml.org/schemas/3.2")]
         public SignalRadio IsTrainRadioSignal { get; set; }
         
-        [System.Xml.Serialization.XmlElementAttribute("isVehicleEquipmentSignal", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("isVehicleEquipmentSignal", Namespace="https://www.railml.org/schemas/3.2")]
         public SignalVehicleEquipment IsVehicleEquipmentSignal { get; set; }
         
         [System.Xml.Serialization.XmlIgnoreAttribute()]
@@ -10009,7 +10009,7 @@ namespace Schemas
         /// <summary>
         /// <para>reference to a balise (group) that is connected with this signal</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("connectedWithBaliseGroup", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("connectedWithBaliseGroup", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> ConnectedWithBaliseGroup
         {
             get
@@ -10047,7 +10047,7 @@ namespace Schemas
         /// <summary>
         /// <para>child element for construction details of the (physical) signal</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("signalConstruction", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("signalConstruction", Namespace="https://www.railml.org/schemas/3.2")]
         public SignalConstruction SignalConstruction { get; set; }
         
         /// <summary>
@@ -10080,7 +10080,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SignalAnnouncement", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SignalAnnouncement", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SignalAnnouncement : SignalX
@@ -10089,7 +10089,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SignalDanger", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SignalDanger", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SignalDanger : SignalX
@@ -10098,7 +10098,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SignalEtcs", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SignalEtcs", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SignalEtcs : SignalX
@@ -10113,7 +10113,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SignalInformation", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SignalInformation", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SignalInformation : SignalX
@@ -10122,7 +10122,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SignalLevelCrossing", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SignalLevelCrossing", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SignalLevelCrossing : SignalX
@@ -10134,7 +10134,7 @@ namespace Schemas
         /// <summary>
         /// <para>reference to the level crossing element that is protected by the signal</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("refersToLevelCrossing", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("refersToLevelCrossing", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> RefersToLevelCrossing
         {
             get
@@ -10165,7 +10165,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tSignalLevelCrossingType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tSignalLevelCrossingType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TSignalLevelCrossingType
     {
         
@@ -10202,7 +10202,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SignalMilepost", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SignalMilepost", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SignalMilepost : SignalX
@@ -10211,7 +10211,7 @@ namespace Schemas
         /// <summary>
         /// <para>reference to the railway line to which the mileage value belongs</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("refersToLine", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("refersToLine", Namespace="https://www.railml.org/schemas/3.2")]
         public Schemas.TElementWithIDref RefersToLine { get; set; }
         
         /// <summary>
@@ -10223,7 +10223,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SignalSpeed", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SignalSpeed", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SignalSpeed : SignalX
@@ -10235,7 +10235,7 @@ namespace Schemas
         /// <summary>
         /// <para>reference to the begin of a speedSection</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("refersToBeginOfSpeedSection", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("refersToBeginOfSpeedSection", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> RefersToBeginOfSpeedSection
         {
             get
@@ -10277,7 +10277,7 @@ namespace Schemas
         /// <summary>
         /// <para>reference to the end of a speedSection</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("refersToEndOfSpeedSection", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("refersToEndOfSpeedSection", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> RefersToEndOfSpeedSection
         {
             get
@@ -10332,7 +10332,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tSignalSpeedType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tSignalSpeedType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TSignalSpeedType
     {
         
@@ -10351,7 +10351,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tTrainRelation", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tTrainRelation", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TTrainRelation
     {
         
@@ -10367,7 +10367,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SignalStopPost", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SignalStopPost", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SignalStopPost : SignalX
@@ -10376,13 +10376,13 @@ namespace Schemas
         /// <summary>
         /// <para>reference to the stoppingPlace</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("refersToStoppingPlace", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("refersToStoppingPlace", Namespace="https://www.railml.org/schemas/3.2")]
         public Schemas.TElementWithIDref RefersToStoppingPlace { get; set; }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SignalTrainMovement", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SignalTrainMovement", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SignalTrainMovement : SignalX
@@ -10391,7 +10391,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SignalRadio", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SignalRadio", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SignalRadio : SignalX
@@ -10400,7 +10400,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> _refersToTrainRadioSection;
         
-        [System.Xml.Serialization.XmlElementAttribute("refersToTrainRadioSection", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("refersToTrainRadioSection", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> RefersToTrainRadioSection
         {
             get
@@ -10438,7 +10438,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SignalVehicleEquipment", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SignalVehicleEquipment", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SignalVehicleEquipment : SignalX
@@ -10447,7 +10447,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SignalConstruction", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SignalConstruction", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SignalConstruction
@@ -10496,7 +10496,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tWiderTrackPosition", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tWiderTrackPosition", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TWiderTrackPosition
     {
         
@@ -10512,7 +10512,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tSignalConstructionType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tSignalConstructionType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TSignalConstructionType
     {
         
@@ -10549,7 +10549,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Speeds", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Speeds", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Speeds
@@ -10558,7 +10558,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<SpeedSection> _speedSection;
         
-        [System.Xml.Serialization.XmlElementAttribute("speedSection", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("speedSection", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<SpeedSection> SpeedSection
         {
             get
@@ -10583,7 +10583,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SpeedSection", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SpeedSection", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SpeedSection : FunctionalInfrastructureEntity
@@ -10595,7 +10595,7 @@ namespace Schemas
         /// <summary>
         /// <para>reference the &lt;speedProfile&gt; element(s) for which the &lt;speedSection&gt; shall be valid</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("validForSpeedProfile", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("validForSpeedProfile", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> ValidForSpeedProfile
         {
             get
@@ -10665,7 +10665,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("StoppingPlaces", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("StoppingPlaces", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class StoppingPlaces
@@ -10674,7 +10674,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<StoppingPlace> _stoppingPlace;
         
-        [System.Xml.Serialization.XmlElementAttribute("stoppingPlace", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("stoppingPlace", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<StoppingPlace> StoppingPlace
         {
             get
@@ -10699,7 +10699,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("StoppingPlace", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("StoppingPlace", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class StoppingPlace : FunctionalInfrastructureEntity, IAStoppingPlace
@@ -10711,7 +10711,7 @@ namespace Schemas
         /// <summary>
         /// <para>specify the train movement types for which the stopping place is valid (freight trains, passenger trains, ...)</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("validForTrainMovement", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("validForTrainMovement", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<TrainMovement> ValidForTrainMovement
         {
             get
@@ -10814,7 +10814,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("TrainMovement", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("TrainMovement", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TrainMovement
@@ -10899,7 +10899,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SwitchesIS", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SwitchesIS", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SwitchesIS
@@ -10908,7 +10908,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<SwitchIS> _switchIS;
         
-        [System.Xml.Serialization.XmlElementAttribute("switchIS", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("switchIS", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<SwitchIS> SwitchIS
         {
             get
@@ -10933,7 +10933,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("SwitchIS", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("SwitchIS", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SwitchIS : TrackNode
@@ -10942,13 +10942,13 @@ namespace Schemas
         /// <summary>
         /// <para>left branch of the switch as seen from switch begin (application direction)</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("leftBranch", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("leftBranch", Namespace="https://www.railml.org/schemas/3.2")]
         public SwitchCrossingBranch LeftBranch { get; set; }
         
         /// <summary>
         /// <para>right branch of the switch as seen from switch begin (application direction)</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("rightBranch", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("rightBranch", Namespace="https://www.railml.org/schemas/3.2")]
         public SwitchCrossingBranch RightBranch { get; set; }
         
         [System.Xml.Serialization.XmlIgnoreAttribute()]
@@ -10957,7 +10957,7 @@ namespace Schemas
         /// <summary>
         /// <para>only for switch crossings: straight branch</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("straightBranch", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("straightBranch", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<SwitchCrossingBranch> StraightBranch
         {
             get
@@ -10999,7 +10999,7 @@ namespace Schemas
         /// <summary>
         /// <para>only for switch crossings: turning branch</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("turningBranch", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("turningBranch", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<SwitchCrossingBranch> TurningBranch
         {
             get
@@ -11081,7 +11081,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tSwitchType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tSwitchType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TSwitchType
     {
         
@@ -11103,7 +11103,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tCourse", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tCourse", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TCourse
     {
         
@@ -11116,7 +11116,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Tracks", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Tracks", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Tracks
@@ -11125,7 +11125,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<Track> _track;
         
-        [System.Xml.Serialization.XmlElementAttribute("track", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("track", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Track> Track
         {
             get
@@ -11153,7 +11153,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("Track", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("Track", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class Track : FunctionalInfrastructureEntity
@@ -11162,13 +11162,13 @@ namespace Schemas
         /// <summary>
         /// <para>reference to a track node (buffer stop, switch, etc.) that marks the begin of the track</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("trackBegin", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("trackBegin", Namespace="https://www.railml.org/schemas/3.2")]
         public Schemas.TElementWithIDref TrackBegin { get; set; }
         
         /// <summary>
         /// <para>reference to a track node (buffer stop, switch, etc.) that marks the end of the track</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("trackEnd", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("trackEnd", Namespace="https://www.railml.org/schemas/3.2")]
         public Schemas.TElementWithIDref TrackEnd { get; set; }
         
         [System.Xml.Serialization.XmlIgnoreAttribute()]
@@ -11177,7 +11177,7 @@ namespace Schemas
         /// <summary>
         /// <para>length of track in metres</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("length", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("length", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Length> Length
         {
             get
@@ -11229,7 +11229,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tTrackType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tTrackType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TTrackType
     {
         
@@ -11273,7 +11273,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("TrackBeds", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("TrackBeds", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TrackBeds
@@ -11282,7 +11282,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<TrackBed> _trackBed;
         
-        [System.Xml.Serialization.XmlElementAttribute("trackBed", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("trackBed", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<TrackBed> TrackBed
         {
             get
@@ -11307,7 +11307,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("TrackBed", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("TrackBed", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TrackBed : FunctionalInfrastructureEntity, IATrackbed
@@ -11402,7 +11402,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tBallastType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tBallastType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TBallastType
     {
         
@@ -11415,7 +11415,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tSleepersType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tSleepersType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TSleepersType
     {
         
@@ -11437,7 +11437,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tJointsType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tJointsType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TJointsType
     {
         
@@ -11456,7 +11456,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("TrackGauges", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("TrackGauges", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TrackGauges
@@ -11465,7 +11465,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<TrackGauge> _trackGauge;
         
-        [System.Xml.Serialization.XmlElementAttribute("trackGauge", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("trackGauge", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<TrackGauge> TrackGauge
         {
             get
@@ -11490,7 +11490,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("TrackGauge", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("TrackGauge", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TrackGauge : FunctionalInfrastructureEntity
@@ -11506,7 +11506,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("TrainDetectionElements", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("TrainDetectionElements", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TrainDetectionElements
@@ -11515,7 +11515,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<TrainDetectionElement> _trainDetectionElement;
         
-        [System.Xml.Serialization.XmlElementAttribute("trainDetectionElement", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("trainDetectionElement", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<TrainDetectionElement> TrainDetectionElement
         {
             get
@@ -11553,7 +11553,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("TrainDetectionElement", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("TrainDetectionElement", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TrainDetectionElement : FunctionalInfrastructureEntity, IATrainDetectionElement
@@ -11565,7 +11565,7 @@ namespace Schemas
         /// <summary>
         /// <para>If the current &lt;trainDetectionElement&gt; is an insulated rail joint or an axle counter and thus a border between two &lt;trainDetectionElement&gt; objects, these two &lt;trainDetectionElement&gt; objects can be referenced.</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("limitsTrainDetectionElement", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("limitsTrainDetectionElement", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.TElementWithIDref> LimitsTrainDetectionElement
         {
             get
@@ -11696,7 +11696,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tTrainDetectionElementType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tTrainDetectionElementType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TTrainDetectionElementType
     {
         
@@ -11721,7 +11721,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tDetectedObject", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tDetectedObject", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TDetectedObject
     {
         
@@ -11740,7 +11740,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tDetectorMedium", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tDetectorMedium", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TDetectorMedium
     {
         
@@ -11768,7 +11768,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tDetectorLayout", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tDetectorLayout", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TDetectorLayout
     {
         
@@ -11793,7 +11793,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("TrainProtectionElements", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("TrainProtectionElements", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TrainProtectionElements
@@ -11802,7 +11802,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<TrainProtectionElement> _trainProtectionElement;
         
-        [System.Xml.Serialization.XmlElementAttribute("trainProtectionElement", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("trainProtectionElement", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<TrainProtectionElement> TrainProtectionElement
         {
             get
@@ -11840,7 +11840,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("TrainProtectionElement", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("TrainProtectionElement", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TrainProtectionElement : FunctionalInfrastructureEntity, IATrainProtection
@@ -11926,7 +11926,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tTrainProtectionMedium", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tTrainProtectionMedium", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TTrainProtectionMedium
     {
         
@@ -11951,7 +11951,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tTrainProtectionMonitoring", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tTrainProtectionMonitoring", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TTrainProtectionMonitoring
     {
         
@@ -11970,7 +11970,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("TrainRadios", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("TrainRadios", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TrainRadios
@@ -11979,7 +11979,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<TrainRadio> _trainRadio;
         
-        [System.Xml.Serialization.XmlElementAttribute("trainRadio", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("trainRadio", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<TrainRadio> TrainRadio
         {
             get
@@ -12004,7 +12004,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("TrainRadio", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("TrainRadio", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TrainRadio : FunctionalInfrastructureEntity
@@ -12090,7 +12090,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("UnderCrossings", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("UnderCrossings", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class UnderCrossings
@@ -12099,7 +12099,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<UnderCrossing> _underCrossing;
         
-        [System.Xml.Serialization.XmlElementAttribute("underCrossing", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("underCrossing", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<UnderCrossing> UnderCrossing
         {
             get
@@ -12127,7 +12127,7 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("WeightLimits", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("WeightLimits", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class WeightLimits
@@ -12136,7 +12136,7 @@ namespace Schemas
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private System.Collections.ObjectModel.Collection<WeightLimit> _weightLimit;
         
-        [System.Xml.Serialization.XmlElementAttribute("weightLimit", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("weightLimit", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<WeightLimit> WeightLimit
         {
             get
@@ -12161,7 +12161,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("WeightLimit", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("WeightLimit", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class WeightLimit : FunctionalInfrastructureEntity
@@ -12196,7 +12196,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tBorderType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tBorderType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TBorderType
     {
         
@@ -12240,7 +12240,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tHorizontalCurveType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tHorizontalCurveType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum THorizontalCurveType
     {
         
@@ -12280,7 +12280,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tElementProjectionSymbolOrientation", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tElementProjectionSymbolOrientation", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TElementProjectionSymbolOrientation
     {
         
@@ -12311,7 +12311,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("OpenEnd", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("OpenEnd", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class OpenEnd
@@ -12323,7 +12323,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tLengthType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tLengthType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TLengthType
     {
         
@@ -12342,7 +12342,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tLevelCrossingProtectionLights", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tLevelCrossingProtectionLights", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TLevelCrossingProtectionLights
     {
         
@@ -12370,10 +12370,10 @@ namespace Schemas
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlType("infrastructure", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlType("infrastructure", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    //[System.Xml.Serialization.XmlRoot("infrastructure", Namespace = "https://www.railml.org/schemas/3.1")]
+    //[System.Xml.Serialization.XmlRoot("infrastructure", Namespace = "https://www.railml.org/schemas/3.2")]
     public class Infrastructure : Schemas.TElementWithID
     {
         
@@ -12387,19 +12387,19 @@ namespace Schemas
         /// <summary>
         /// <para>container element for geometry model</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("geometry", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("geometry", Namespace="https://www.railml.org/schemas/3.2")]
         public Geometry Geometry { get; set; }
         
         /// <summary>
         /// <para>container element for all railway network's functional infrastructure elements</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("functionalInfrastructure", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("functionalInfrastructure", Namespace="https://www.railml.org/schemas/3.2")]
         public FunctionalInfrastructure FunctionalInfrastructure { get; set; }
         
         /// <summary>
         /// <para>container element for all physical railway infrastructure facilities</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("physicalFacilities", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("physicalFacilities", Namespace="https://www.railml.org/schemas/3.2")]
         public PhysicalFacilities PhysicalFacilities { get; set; }
         
         [System.Xml.Serialization.XmlIgnoreAttribute()]
@@ -12408,8 +12408,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for infrastructure visualizations model</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("infrastructureVisualizations", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("visualization", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("infrastructureVisualizations", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("visualization", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Visualization> InfrastructureVisualizations
         {
             get
@@ -12451,8 +12451,8 @@ namespace Schemas
         /// <summary>
         /// <para>container element for infrastructure states model</para>
         /// </summary>
-        [System.Xml.Serialization.XmlArrayAttribute("infrastructureStates", Namespace="https://www.railml.org/schemas/3.1")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("infrastructureState", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlArrayAttribute("infrastructureStates", Namespace="https://www.railml.org/schemas/3.2")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("infrastructureState", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<InfrastructureState> InfrastructureStates
         {
             get
@@ -12481,7 +12481,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("InfrastructureStates", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("InfrastructureStates", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class InfrastructureStates
@@ -12493,7 +12493,7 @@ namespace Schemas
         /// <summary>
         /// <para>state of (a part of) the functional infrastructure regarding its availability and usability</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("infrastructureState", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("infrastructureState", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<InfrastructureState> InfrastructureState
         {
             get
@@ -12518,7 +12518,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("InfrastructureState", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("InfrastructureState", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class InfrastructureState : StatesBaseElement
@@ -12530,7 +12530,7 @@ namespace Schemas
         /// <summary>
         /// <para>list of infrastructure elements in a certain state that belong to this infrastructure state</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("elementState", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("elementState", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<ElementState> ElementState
         {
             get
@@ -12572,7 +12572,7 @@ namespace Schemas
         /// <summary>
         /// <para>list of time periods when the infrastructure state is valid</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("validityTime", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("validityTime", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.Period> ValidityTime
         {
             get
@@ -12607,7 +12607,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("StatesBaseElement", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("StatesBaseElement", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(ElementState))]
@@ -12659,7 +12659,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("ElementState", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("ElementState", Namespace="https://www.railml.org/schemas/3.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ElementState : StatesBaseElement
@@ -12671,7 +12671,7 @@ namespace Schemas
         /// <summary>
         /// <para>list of time periods when the infrastructure element state is valid; there should be at least some overlap with the infrastructure state validity time</para>
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("validityTime", Namespace="https://www.railml.org/schemas/3.1")]
+        [System.Xml.Serialization.XmlElementAttribute("validityTime", Namespace="https://www.railml.org/schemas/3.2")]
         public System.Collections.ObjectModel.Collection<Schemas.Period> ValidityTime
         {
             get
@@ -12722,7 +12722,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tLineTrafficCode", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tLineTrafficCode", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TLineTrafficCode
     {
         
@@ -12757,7 +12757,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tTrainRadioSystem", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tTrainRadioSystem", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TTrainRadioSystem
     {
         
@@ -12776,7 +12776,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tTrainRadioNetworkSelection", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tTrainRadioNetworkSelection", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TTrainRadioNetworkSelection
     {
         
@@ -12792,7 +12792,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tTrainMovementType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tTrainMovementType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TTrainMovementType
     {
         
@@ -12811,7 +12811,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tLevelCrossingProtectionBarrier", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tLevelCrossingProtectionBarrier", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TLevelCrossingProtectionBarrier
     {
         
@@ -12842,7 +12842,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tBaliseGroupType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tBaliseGroupType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TBaliseGroupType
     {
         
@@ -12858,7 +12858,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tLevelCrossingProtectionAcoustic", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tLevelCrossingProtectionAcoustic", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TLevelCrossingProtectionAcoustic
     {
         
@@ -12877,7 +12877,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tInfrastructureState", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tInfrastructureState", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TInfrastructureState
     {
         
@@ -12914,7 +12914,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tOpOperationalType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tOpOperationalType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TOpOperationalType
     {
         
@@ -12969,7 +12969,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tCrossedElementType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tCrossedElementType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TCrossedElementType
     {
         
@@ -13012,7 +13012,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tCrossingConstructionType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tCrossingConstructionType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TCrossingConstructionType
     {
         
@@ -13025,7 +13025,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tPlaneTrackPosition", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tPlaneTrackPosition", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TPlaneTrackPosition
     {
         
@@ -13038,7 +13038,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tRestrictionAreaType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tRestrictionAreaType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TRestrictionAreaType
     {
         
@@ -13093,7 +13093,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tCurrentSystem", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tCurrentSystem", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TCurrentSystem
     {
         
@@ -13104,7 +13104,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tContactStripMaterial", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tContactStripMaterial", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TContactStripMaterial
     {
         
@@ -13141,7 +13141,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tPantoHeadType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tPantoHeadType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TPantoHeadType
     {
         
@@ -13171,7 +13171,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tTSIPantoHeadType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tTSIPantoHeadType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TTSIPantoHeadType
     {
         
@@ -13190,7 +13190,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tVMaxEnd", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tVMaxEnd", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TVMaxEnd
     {
         
@@ -13200,7 +13200,7 @@ namespace Schemas
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("XmlSchemaClassGenerator", "2.0.0.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute("tOpTrafficType", Namespace="https://www.railml.org/schemas/3.1")]
+    [System.Xml.Serialization.XmlTypeAttribute("tOpTrafficType", Namespace="https://www.railml.org/schemas/3.2")]
     public enum TOpTrafficType
     {
         

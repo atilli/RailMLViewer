@@ -9,14 +9,14 @@ namespace RailMLViewer
     {
         public ScalableViewPort()
         {
-            startingOrigo = new Point(0, 0);
-            viewPortOrigo = new Point(0, 0);
+            _startingOrigo = new Point(0, 0);
+            _viewPortOrigo = new Point(0, 0);
 
-            step = 10;
-            minPercentage = 10;
-            currentPercentage = 100;
-            scale = currentPercentage / 100F;
-            maxPercentage = 500;
+            _step = 5;
+            _minPercentage = 1;
+            _currentPercentage = 100;
+            _scale = _currentPercentage / 100F;
+            _maxPercentage = 500;
         }
         internal Line2d LogicalLineToScreen(Line2d logicalLine)
         {
@@ -24,6 +24,9 @@ namespace RailMLViewer
                  LogicalXToScreenX(logicalLine.EndX), LogicalYToScreenY(logicalLine.EndY));
 
 
+        }
+        public string BuildDebugString() {
+            return $"X = {_viewPortOrigo.X}, X = {_viewPortOrigo.Y}, {_currentPercentage}";
         }
         internal void ZoomIn(Point screenPoint)
         {
@@ -33,8 +36,8 @@ namespace RailMLViewer
             ZoomInOneStep();
 
             // We move origo to try to keep mouse over point to point to same logical coordinates...
-            viewPortOrigo.X = logicalZoomLocationX - (int)ScreenXLengthToLogical(screenPoint.X);
-            viewPortOrigo.Y = logicalZoomLocationY - (int)ScreenYLengthToLogical(screenPoint.Y);
+            _viewPortOrigo.X = logicalZoomLocationX - (int)ScreenXLengthToLogical(screenPoint.X);
+            _viewPortOrigo.Y = logicalZoomLocationY - (int)ScreenYLengthToLogical(screenPoint.Y);
         }
         internal bool MoveOrigoScreenToScreen(Point oldScreenLoc, Point newScreenLoc)
         {
@@ -44,17 +47,17 @@ namespace RailMLViewer
             int screenMoveY = oldScreenLoc.Y - newScreenLoc.Y;
             if(screenMoveX!=0 || screenMoveY!=0)
             {
-                viewPortOrigo.X = (int) ScreenXToLogical(screenMoveX);
-                viewPortOrigo.Y = (int) ScreenYToLogical(screenMoveY);
+                _viewPortOrigo.X = (int) ScreenXToLogical(screenMoveX);
+                _viewPortOrigo.Y = (int) ScreenYToLogical(screenMoveY);
                 moved = true;
             }
             return moved;
         }
         void ResetViewPort()
         {
-            currentPercentage = 100;
-            scale = currentPercentage / 100F;
-            viewPortOrigo = startingOrigo;
+            _currentPercentage = 100;
+            _scale = _currentPercentage / 100F;
+            _viewPortOrigo = _startingOrigo;
         }
         internal void ZoomOut(Point screenPoint)
         {
@@ -65,46 +68,46 @@ namespace RailMLViewer
             ZoomOutOneStep();
 
             // We move origo to try to keep mouse over point to point to same logical coordinates...
-            viewPortOrigo.X = logicalZoomLocationX - (int) ScreenXLengthToLogical(screenPoint.X);
-            viewPortOrigo.Y = logicalZoomLocationY - (int) ScreenYLengthToLogical(screenPoint.Y);
+            _viewPortOrigo.X = logicalZoomLocationX - (int) ScreenXLengthToLogical(screenPoint.X);
+            _viewPortOrigo.Y = logicalZoomLocationY - (int) ScreenYLengthToLogical(screenPoint.Y);
             
         }
         void ZoomInOneStep()
         {
-            currentPercentage += step;
-            if(currentPercentage>=maxPercentage)
+            _currentPercentage += _step;
+            if(_currentPercentage>=_maxPercentage)
             {
-                currentPercentage = maxPercentage;
+                _currentPercentage = _maxPercentage;
                 
             }
-            scale = currentPercentage / 100F;
+            _scale = _currentPercentage / 100F;
         }
         void ZoomOutOneStep()
         {
-            currentPercentage -= step;
-            if (currentPercentage <= minPercentage)
+            _currentPercentage -= _step;
+            if (_currentPercentage <= _minPercentage)
             {
-                currentPercentage = minPercentage;
+                _currentPercentage = _minPercentage;
                 
             }
-            scale = currentPercentage / 100F;
+            _scale = _currentPercentage / 100F;
         }
         // not that we have only one scale so two below methods are currenly similar...
         float ScreenXLengthToLogical(int screenXLen)
         {
-            return (screenXLen / scale);
+            return (screenXLen / _scale);
         }
         float ScreenYLengthToLogical(int screenYLen)
         {
-            return (screenYLen / scale);
+            return (screenYLen / _scale);
         }
         float ScreenXToLogical(int screenX)
         {
-            return (screenX / scale) + viewPortOrigo.X;
+            return (screenX / _scale) + _viewPortOrigo.X;
         }
         float ScreenYToLogical(int screenY)
         {
-            return (screenY / scale) + viewPortOrigo.Y;
+            return (screenY / _scale) + _viewPortOrigo.Y;
         }
         
         public Point PointToScreen(Point logicalPoint)
@@ -114,22 +117,29 @@ namespace RailMLViewer
 
         public int LogicalXToScreenX(int logicalX)
         {
-            return System.Convert.ToInt32((float)(logicalX - viewPortOrigo.X) * scale);
+            return System.Convert.ToInt32((float)(logicalX - _viewPortOrigo.X) * _scale);
 
         }
         public int LogicalYToScreenY(int logicalY)
         {
-            return System.Convert.ToInt32((float)(logicalY - viewPortOrigo.Y) * scale);
+            return System.Convert.ToInt32((float)(logicalY - _viewPortOrigo.Y) * _scale);
+        }
+        public void SetIntialCenter(PointF center) {
+
+            _startingOrigo = Point.Round(center);
+
+            _viewPortOrigo = _startingOrigo;
+
         }
 
-        Point viewPortOrigo;
-        Point startingOrigo;
+        Point _viewPortOrigo;
+        Point _startingOrigo;
 
-        int step;
-        int minPercentage;
-        int currentPercentage;
-        float scale;
-        int maxPercentage;
+        int _step;
+        int _minPercentage;
+        int _currentPercentage;
+        float _scale;
+        int _maxPercentage;
     }
 
 }
